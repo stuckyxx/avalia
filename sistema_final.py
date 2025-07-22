@@ -136,7 +136,7 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     
     p_title = doc.add_paragraph()
     p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run_title = p_title.add_run("PROGRAMA NACIONAL DE TRANSPARÊNCIA PÚBLICA")
+    run_title = p_title.add_run("PADRÃO MINIMO DE QUALIDADE")
     run_title.font.size = Pt(22); run_title.bold = True
     p_subtitulo = doc.add_paragraph(); p_subtitulo.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_subtitulo.add_run("Relatório de Transparência\n").bold = True
