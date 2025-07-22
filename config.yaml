@@ -1,0 +1,31 @@
+credentials:
+  usernames:
+    Gabriel:
+      email: gabriel@assesi.com
+      name: Gabriel
+      password: 'gabriel123'
+      template: padrao
+    wendel:
+      email: wendel@assesi.com
+      name: wendel
+      password: 'andrade1994'
+      template: padrao
+    thomas:
+      email: thomas@assesi.com
+      name: thomas
+      password: 'thomas123'
+      template: padrao
+    thilia:
+      email: thilia@assesi.com
+      name: thilia
+      password: 'thilia123'
+      template: padrao
+    neto:
+      email: raimundo.neto@assesi.com
+      name: neto
+      password: 'neto123'
+      template: padrao
+cookie:
+  expiry_days: 30
+  key: a_key_secreta_aleatoria 
+  name: cookie_de_login
