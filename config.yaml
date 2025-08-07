@@ -14,6 +14,32 @@ credentials:
       email: "gabriel@assesi.com"
       name: "Gabriel"
       password: "admin"
+
+    wendel: # Seu nome de usuário
+      email: "wendel@assesi.com"
+      name: "Wendel"
+      password: "andrade1994"
+
+    kauan: # Seu nome de usuário
+      email: "kauan@assesi.com"
+      name: "Kauan"
+      password: "kauan123"
+
+    neto: # Seu nome de usuário
+      email: "raimundo.neto@assesi.com"
+      name: "Neto"
+      password: "neto"
+
+    thilia: # Seu nome de usuário
+      email: "thilia@assesi.com"
+      name: "Thilia"
+      password: "thilia123"
+
+     thomas: # Seu nome de usuário
+      email: "thomas@assesi.com"
+      name: "Thomas"
+      password: "thomas123" 
+
       
       # Cuidado: a senha aqui deve ser um hash, não texto puro!
     # adicione outros usuários aqui
@@ -22,6 +48,7 @@ credentials:
     #   name: "Outro Nome"
 
     #   password: "def"
+
 
 
 
