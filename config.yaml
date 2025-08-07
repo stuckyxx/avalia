@@ -6,7 +6,7 @@ cookie:
 credentials:
   usernames:
     Assesi: # Seu nome de usuário
-      email: "gabriel@assesi.com"
+      email: "atendimento@assesi.com"
       name: "Assesi"
       password: "assesi"
 
@@ -18,5 +18,6 @@ credentials:
     #   name: "Outro Nome"
 
     #   password: "def"
+
 
 
