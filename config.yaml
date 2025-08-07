@@ -5,41 +5,11 @@ cookie:
 
 credentials:
   usernames:
-    gabriel: # Seu nome de usuário
+    Assesi: # Seu nome de usuário
       email: "gabriel@assesi.com"
-      name: "Gabriel"
-      password: "admin"
-      
-    usernames:
-      wendel: # Seu nome de usuário
-      email: "wendel@assesi.com"
-      name: "Wendel"
-      password: "andrade1994"
+      name: "Assesi"
+      password: "assesi"
 
-     usernames:
-      neto: # Seu nome de usuário
-      email: "raimundo.neto@assesi.com"
-      name: "Neto"
-      password: "neto123"
-
-    usernames:
-      kauan: # Seu nome de usuário
-      email: "kauan@assesi.com"
-      name: "Kauan"
-      password: "kauan123"
-      
-    usernames:
-      thomas: # Seu nome de usuário
-      email: "thomas@assesi.com"
-      name: "Thomas"
-      password: "thomas"
-    
-    usernames:
-      thilia: # Seu nome de usuário
-      email: "thilia@assesi.com"
-      name: "Thilia"
-      password: "thilia123"
-      
       
       # Cuidado: a senha aqui deve ser um hash, não texto puro!
     # adicione outros usuários aqui
@@ -48,4 +18,5 @@ credentials:
     #   name: "Outro Nome"
 
     #   password: "def"
+
 
