@@ -3,3 +3,4 @@ streamlit
 google-generativeai
 requests
 beautifulsoup4
+python-docx
