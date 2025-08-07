@@ -3,6 +3,9 @@ python-docx
 docx2pdf
 streamlit-authenticator
 pyyaml
+google-generativeai
+requests
+beautifulsoup4
 
 ace_tools==0.0
 aiohappyeyeballs==2.6.1
