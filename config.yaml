@@ -9,7 +9,11 @@ credentials:
       email: "atendimento@assesi.com"
       name: "Assesi"
       password: "assesi"
-
+    
+    gabriel: # Seu nome de usuário
+      email: "gabriel@assesi.com"
+      name: "Gabriel"
+      password: "admin"
       
       # Cuidado: a senha aqui deve ser um hash, não texto puro!
     # adicione outros usuários aqui
@@ -18,6 +22,7 @@ credentials:
     #   name: "Outro Nome"
 
     #   password: "def"
+
 
 
 
