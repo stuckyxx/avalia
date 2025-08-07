@@ -6,7 +6,7 @@ import docx
 from docx.shared import Pt, RGBColor, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.section import WD_ORIENT
-from docx2pdf import convert
+import aspose.words as aw
 import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
@@ -297,3 +297,4 @@ if matriz_completa:
     elif st.session_state["authentication_status"] is None: st.warning('Por favor, insira seu usuário e senha.')
 else:
     st.warning("Aguardando o carregamento do arquivo 'criterios_por_topico.json'...")
+
