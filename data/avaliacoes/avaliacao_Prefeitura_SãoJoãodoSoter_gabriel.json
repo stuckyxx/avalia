@@ -1,0 +1,506 @@
+{
+    "INFORMAÇÕES PRIORITÁRIAS_Possui sítio oficial próprio na internet?_links": [],
+    "INFORMAÇÕES PRIORITÁRIAS_Possui portal da transparência próprio ou compartilhado na internet?_links": [],
+    "INFORMAÇÕES PRIORITÁRIAS_O acesso ao portal transparência está visível na capa do site?_links": [],
+    "INFORMAÇÕES PRIORITÁRIAS_O site contém ferramenta de pesquisa de conteúdo que permita o acesso à informação?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga a estrutura organizacional?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga competências e/ou atribuições?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/orgao/orgao/exibirOrgaosEsic"
+    ],
+    "INFORMAÇÕES INSTITUCIONAIS_Identifica o nome dos responsáveis pela gestão do Poder/Órgão?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga os endereços e telefones da entidade e e-mails institucionais?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga o horário de atendimento?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga os atos normativos próprios?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga os atos normativos próprios?_Atualidade": "Atende",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga os atos normativos próprios?_Série Histórica": "Atende",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga os atos normativos próprios?_Filtro de Pesquisa": "Atende",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga as perguntas e respostas frequentes?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Apresenta link para perfil em redes sociais?_links": [],
+    "INFORMAÇÕES INSTITUCIONAIS_Inclui botão do Radar no site institucional?_links": [],
+    "RECEITA_Divulga as receitas do Poder ou órgão, evidenciando sua previsão e realização?_links": [],
+    "RECEITA_Divulga as receitas do Poder ou órgão, evidenciando sua previsão e realização?_Atualidade": "Atende",
+    "RECEITA_Divulga as receitas do Poder ou órgão, evidenciando sua previsão e realização?_Série Histórica": "Atende",
+    "RECEITA_Divulga as receitas do Poder ou órgão, evidenciando sua previsão e realização?_Gravação de Relatório": "Atende",
+    "RECEITA_Divulga as receitas do Poder ou órgão, evidenciando sua previsão e realização?_Filtro de Pesquisa": "Atende",
+    "RECEITA_Divulga a classificação orçamentária por natureza da receita (categoria econômica, origem, espécie)?_links": [],
+    "RECEITA_Divulga a classificação orçamentária por natureza da receita (categoria econômica, origem, espécie)?_Atualidade": "Atende",
+    "RECEITA_Divulga a classificação orçamentária por natureza da receita (categoria econômica, origem, espécie)?_Série Histórica": "Atende",
+    "RECEITA_Divulga a classificação orçamentária por natureza da receita (categoria econômica, origem, espécie)?_Gravação de Relatório": "Atende",
+    "RECEITA_Divulga a classificação orçamentária por natureza da receita (categoria econômica, origem, espécie)?_Filtro de Pesquisa": "Atende",
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/dividaativa/dividaativa"
+    ],
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_Atualidade": "Não Atende",
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_Série Histórica": "Não Atende",
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_Gravação de Relatório": "Não Atende",
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_Filtro de Pesquisa": "Não Atende",
+    "DESPESA_Divulga o total das despesas empenhadas, liquidadas e pagas?_links": [],
+    "DESPESA_Divulga o total das despesas empenhadas, liquidadas e pagas?_Atualidade": "Atende",
+    "DESPESA_Divulga o total das despesas empenhadas, liquidadas e pagas?_Série Histórica": "Atende",
+    "DESPESA_Divulga o total das despesas empenhadas, liquidadas e pagas?_Gravação de Relatório": "Atende",
+    "DESPESA_Divulga o total das despesas empenhadas, liquidadas e pagas?_Filtro de Pesquisa": "Atende",
+    "DESPESA_Divulga as despesas por classificação orçamentária?_links": [],
+    "DESPESA_Divulga as despesas por classificação orçamentária?_Atualidade": "Atende",
+    "DESPESA_Divulga as despesas por classificação orçamentária?_Série Histórica": "Atende",
+    "DESPESA_Divulga as despesas por classificação orçamentária?_Gravação de Relatório": "Atende",
+    "DESPESA_Divulga as despesas por classificação orçamentária?_Filtro de Pesquisa": "Atende",
+    "DESPESA_Possibilita a consulta de empenhos com os detalhes do beneficiário do pagamento ou credor, o bem fornecido ou serviço prestado e a identificação do procedimento licitatório originário da despesa?_links": [],
+    "DESPESA_Possibilita a consulta de empenhos com os detalhes do beneficiário do pagamento ou credor, o bem fornecido ou serviço prestado e a identificação do procedimento licitatório originário da despesa?_Atualidade": "Atende",
+    "DESPESA_Possibilita a consulta de empenhos com os detalhes do beneficiário do pagamento ou credor, o bem fornecido ou serviço prestado e a identificação do procedimento licitatório originário da despesa?_Série Histórica": "Atende",
+    "DESPESA_Possibilita a consulta de empenhos com os detalhes do beneficiário do pagamento ou credor, o bem fornecido ou serviço prestado e a identificação do procedimento licitatório originário da despesa?_Gravação de Relatório": "Atende",
+    "DESPESA_Possibilita a consulta de empenhos com os detalhes do beneficiário do pagamento ou credor, o bem fornecido ou serviço prestado e a identificação do procedimento licitatório originário da despesa?_Filtro de Pesquisa": "Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/convenios/convenios"
+    ],
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_Atualidade": "Não Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_Série Histórica": "Não Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_Gravação de Relatório": "Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_Filtro de Pesquisa": "Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/convenios/convenios"
+    ],
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_Atualidade": "Não Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_Série Histórica": "Não Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_Gravação de Relatório": "Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_Filtro de Pesquisa": "Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/convenios/convenios"
+    ],
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_Atualidade": "Não Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_Série Histórica": "Não Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_Gravação de Relatório": "Atende",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_Filtro de Pesquisa": "Atende",
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_links": [
+        "https://folha.governotransparente.com.br/211107801/foff"
+    ],
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_Atualidade": "Não Atende",
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_Série Histórica": "Não Atende",
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_Gravação de Relatório": "Atende",
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_Filtro de Pesquisa": "Atende",
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/relacaoservidores/relacaoservidores"
+    ],
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_Atualidade": "Não Atende",
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_Série Histórica": "Não Atende",
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_Gravação de Relatório": "Não Atende",
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_Filtro de Pesquisa": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/relacaoestagiarios/relacaoestagiarios"
+    ],
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Atualidade": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Série Histórica": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Gravação de Relatório": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Filtro de Pesquisa": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/relacaoterceirizados/relacaoterceirizados"
+    ],
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_Atualidade": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_Série Histórica": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_Gravação de Relatório": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_Filtro de Pesquisa": "Não Atende",
+    "RECURSOS HUMANOS_Divulga a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para provimento de cargos e empregos públicos?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/concursopublico/concursopublico"
+    ],
+    "RECURSOS HUMANOS_Divulga a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para provimento de cargos e empregos públicos?_Atualidade": "Não Atende",
+    "RECURSOS HUMANOS_Divulga a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para provimento de cargos e empregos públicos?_Série Histórica": "Não Atende",
+    "RECURSOS HUMANOS_Divulga a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para provimento de cargos e empregos públicos?_Filtro de Pesquisa": "Não Atende",
+    "RECURSOS HUMANOS_Divulga informações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão, contendo no mínimo a lista de aprovados com as classificações e as nomeações?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/concursopublico/concursopublico"
+    ],
+    "RECURSOS HUMANOS_Divulga informações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão, contendo no mínimo a lista de aprovados com as classificações e as nomeações?_Atualidade": "Não Atende",
+    "RECURSOS HUMANOS_Divulga informações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão, contendo no mínimo a lista de aprovados com as classificações e as nomeações?_Gravação de Relatório": "Não Atende",
+    "RECURSOS HUMANOS_Divulga informações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão, contendo no mínimo a lista de aprovados com as classificações e as nomeações?_Filtro de Pesquisa": "Não Atende",
+    "DIÁRIAS_Divulga o nome e o cargo/função do beneficiário, além do valor total recebido, número de diárias usufruídas por afastamento, período de afastamento, motivo do afastamento e local de destino?_links": [],
+    "DIÁRIAS_Divulga o nome e o cargo/função do beneficiário, além do valor total recebido, número de diárias usufruídas por afastamento, período de afastamento, motivo do afastamento e local de destino?_Atualidade": "Atende",
+    "DIÁRIAS_Divulga o nome e o cargo/função do beneficiário, além do valor total recebido, número de diárias usufruídas por afastamento, período de afastamento, motivo do afastamento e local de destino?_Série Histórica": "Atende",
+    "DIÁRIAS_Divulga o nome e o cargo/função do beneficiário, além do valor total recebido, número de diárias usufruídas por afastamento, período de afastamento, motivo do afastamento e local de destino?_Gravação de Relatório": "Atende",
+    "DIÁRIAS_Divulga o nome e o cargo/função do beneficiário, além do valor total recebido, número de diárias usufruídas por afastamento, período de afastamento, motivo do afastamento e local de destino?_Filtro de Pesquisa": "Atende",
+    "DIÁRIAS_Divulga tabela ou relação que explicite os valores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/diarias/diarias/tabela"
+    ],
+    "DIÁRIAS_Divulga tabela ou relação que explicite os valores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local?_Atualidade": "Não Atende",
+    "DIÁRIAS_Divulga tabela ou relação que explicite os valores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local?_Série Histórica": "Não Atende",
+    "DIÁRIAS_Divulga tabela ou relação que explicite os valores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local?_Filtro de Pesquisa": "Não Atende",
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/licitacao/tce/exibir"
+    ],
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_Série Histórica": "Atende",
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_Gravação de Relatório": "Atende",
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_Filtro de Pesquisa": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos editais de licitação?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/licitacao/tce/exibir"
+    ],
+    "LICITAÇÕES_Divulga a íntegra dos editais de licitação?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a íntegra dos editais de licitação?_Série Histórica": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos editais de licitação?_Filtro de Pesquisa": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos demais documentos das fases interna e externa das licitações?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/licitacao/tce/exibir"
+    ],
+    "LICITAÇÕES_Divulga a íntegra dos demais documentos das fases interna e externa das licitações?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a íntegra dos demais documentos das fases interna e externa das licitações?_Série Histórica": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos demais documentos das fases interna e externa das licitações?_Filtro de Pesquisa": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/licitacao/tce/exibir"
+    ],
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_Série Histórica": "Não Atende",
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_Filtro de Pesquisa": "Atende",
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/licitacao/tce/exibir"
+    ],
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_Série Histórica": "Não Atende",
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_Filtro de Pesquisa": "Atende",
+    "LICITAÇÕES_Publica plano anual de contratações?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/planocontratacaoanual/planocontratacaoanual"
+    ],
+    "LICITAÇÕES_Publica plano anual de contratações?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_Atualidade": "Não Atende",
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_Série Histórica": "Não Atende",
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_Gravação de Relatório": "Não Atende",
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_Filtro de Pesquisa": "Não Atende",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/contratos/contratos"
+    ],
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Atualidade": "Não Atende",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Série Histórica": "Não Atende",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Gravação de Relatório": "Atende",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Filtro de Pesquisa": "Atende",
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/termosaditivos/termosaditivos"
+    ],
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_Atualidade": "Não Atende",
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_Série Histórica": "Não Atende",
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_Filtro de Pesquisa": "Atende",
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/fiscaiscontratos/fiscaiscontratos"
+    ],
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_Atualidade": "Não Atende",
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_Série Histórica": "Não Atende",
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_Gravação de Relatório": "Não Atende",
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_Filtro de Pesquisa": "Não Atende",
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_Atualidade": "Não Atende",
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_Série Histórica": "Não Atende",
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_Gravação de Relatório": "Não Atende",
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_Filtro de Pesquisa": "Não Atende",
+    "OBRAS_Divulga informações sobre as obras contendo o objeto, a situação atual, as datas de início e de conclusão da obra, empresa contratada e o percentual concluído?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/acao/acao"
+    ],
+    "OBRAS_Divulga informações sobre as obras contendo o objeto, a situação atual, as datas de início e de conclusão da obra, empresa contratada e o percentual concluído?_Atualidade": "Não Atende",
+    "OBRAS_Divulga informações sobre as obras contendo o objeto, a situação atual, as datas de início e de conclusão da obra, empresa contratada e o percentual concluído?_Gravação de Relatório": "Não Atende",
+    "OBRAS_Divulga informações sobre as obras contendo o objeto, a situação atual, as datas de início e de conclusão da obra, empresa contratada e o percentual concluído?_Filtro de Pesquisa": "Não Atende",
+    "OBRAS_Divulga os quantitativos, os preços unitários e totais contratados?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/acao/acao"
+    ],
+    "OBRAS_Divulga os quantitativos, os preços unitários e totais contratados?_Atualidade": "Não Atende",
+    "OBRAS_Divulga os quantitativos, os preços unitários e totais contratados?_Gravação de Relatório": "Não Atende",
+    "OBRAS_Divulga os quantitativos executados e os preços efetivamente pagos?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/acao/acao"
+    ],
+    "OBRAS_Divulga os quantitativos executados e os preços efetivamente pagos?_Atualidade": "Não Atende",
+    "OBRAS_Divulga os quantitativos executados e os preços efetivamente pagos?_Gravação de Relatório": "Não Atende",
+    "OBRAS_Divulga relação das obras paralisadas contendo o motivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o reinício da sua execução?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/acao/acao"
+    ],
+    "OBRAS_Divulga relação das obras paralisadas contendo o motivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o reinício da sua execução?_Atualidade": "Não Atende",
+    "OBRAS_Divulga relação das obras paralisadas contendo o motivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o reinício da sua execução?_Gravação de Relatório": "Não Atende",
+    "OBRAS_Divulga relação das obras paralisadas contendo o motivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o reinício da sua execução?_Filtro de Pesquisa": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/prestacaodecontas/prestacaodecontas"
+    ],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?_Atualidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?_Série Histórica": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?_Filtro de Pesquisa": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão ou Atividades?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão ou Atividades?_Atualidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão ou Atividades?_Série Histórica": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão ou Atividades?_Filtro de Pesquisa": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a íntegra da decisão da apreciação ou julgamento das contas pelo Tribunal de Contas?_links": [],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a íntegra da decisão da apreciação ou julgamento das contas pelo Tribunal de Contas?_Atualidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a íntegra da decisão da apreciação ou julgamento das contas pelo Tribunal de Contas?_Série Histórica": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o resultado do julgamento das Contas do Chefe do Poder Executivo pelo Poder Legislativo?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/prestacaodecontas/prestacaodecontas"
+    ],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o resultado do julgamento das Contas do Chefe do Poder Executivo pelo Poder Legislativo?_Atualidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o resultado do julgamento das Contas do Chefe do Poder Executivo pelo Poder Legislativo?_Série Histórica": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão Fiscal (RGF)?_links": [],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão Fiscal (RGF)?_Atualidade": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão Fiscal (RGF)?_Série Histórica": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão Fiscal (RGF)?_Filtro de Pesquisa": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório Resumido da Execução Orçamentária (RREO)?_links": [],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório Resumido da Execução Orçamentária (RREO)?_Atualidade": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório Resumido da Execução Orçamentária (RREO)?_Série Histórica": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório Resumido da Execução Orçamentária (RREO)?_Filtro de Pesquisa": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o plano estratégico institucional?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a Lei do Plano Plurianual (PPA) e seus anexos?_links": [],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a Lei de Diretrizes Orçamentárias (LDO) e seus anexos?_links": [],
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a Lei Orçamentária (LOA) e seus anexos?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Existe o SIC no site e indica a unidade/setor responsável?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Indica o endereço físico, o telefone e o e-mail da unidade responsável pelo SIC, além do horário de funcionamento?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Há possibilidade de envio de pedidos de informação de forma eletrônica (e-SIC)?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_A solicitação por meio de eSic é simples, ou seja, sem a exigência de itens de identificação do requerente que dificultem ou impossibilitem o acesso à informação, tais como: envio de documentos, assinatura reconhecida, declaração de responsabilidade, maioridade?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga nesta seção, instrumento normativo local que regulamente a Lei nº 12.527/2011 – LAI?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga, na seção relativa ao e-SIC, os prazos de resposta ao cidadão, incluindo o recursal, e as autoridades competentes para o exame dos pedidos, além do procedimento referente à realização do pedido e de eventual recurso?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga relatório anual estatístico contendo a quantidade de pedidos de acesso recebidos, atendidos, indeferidos, bem como informações genéricas sobre os solicitantes?_links": [],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga relatório anual estatístico contendo a quantidade de pedidos de acesso recebidos, atendidos, indeferidos, bem como informações genéricas sobre os solicitantes?_Atualidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga relatório anual estatístico contendo a quantidade de pedidos de acesso recebidos, atendidos, indeferidos, bem como informações genéricas sobre os solicitantes?_Série Histórica": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga relatório anual estatístico contendo a quantidade de pedidos de acesso recebidos, atendidos, indeferidos, bem como informações genéricas sobre os solicitantes?_Gravação de Relatório": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga relatório anual estatístico contendo a quantidade de pedidos de acesso recebidos, atendidos, indeferidos, bem como informações genéricas sobre os solicitantes?_Filtro de Pesquisa": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/classificacao/classificacao"
+    ],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_Atualidade": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_Série Histórica": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_Gravação de Relatório": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_Filtro de Pesquisa": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/classificacao/classificacao"
+    ],
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_Atualidade": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_Série Histórica": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_Gravação de Relatório": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_Filtro de Pesquisa": "Não Atende",
+    "ACESSIBILIDADE_O site oficial e o portal de transparência contêm símbolo de acessibilidade em destaque?_links": [],
+    "ACESSIBILIDADE_O site e o portal de transparência contêm exibição do “caminho” de páginas percorridas pelo usuário?_links": [
+        "https://www.saojoaodosoter.ma.gov.br/"
+    ],
+    "ACESSIBILIDADE_O site e o portal de transparência contêm opção de alto contraste?_links": [],
+    "ACESSIBILIDADE_O site e o portal de transparência contêm ferramenta de redimensionamento de texto?_links": [],
+    "ACESSIBILIDADE_Contém mapa do site institucional?_links": [],
+    "OUVIDORIA_Há informações sobre o atendimento presencial pela Ouvidoria (Indicação de endereço físico e telefone, além do horário de funcionamento)?_links": [],
+    "OUVIDORIA_Há canal eletrônico de acesso/interação com a ouvidoria?_links": [],
+    "OUVIDORIA_Divulga Carta de Serviços ao Usuário?_links": [],
+    "LGPD E GOVERNO DIGITAL_Identifica o encarregado/responsável pelo tratamento de dados pessoais e disponibiliza Canal de Comunicação (telefone e/ou e-mail)?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/lgpd/lgpd"
+    ],
+    "LGPD E GOVERNO DIGITAL_Publica a sua Política de Privacidade e Proteção de Dados?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/lgpd/lgpd"
+    ],
+    "LGPD E GOVERNO DIGITAL_Possibilita a demanda e o acesso a serviços públicos por meio digital, sem necessidade de solicitação presencial?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/lgpd/lgpd"
+    ],
+    "LGPD E GOVERNO DIGITAL_Possibilita o acesso automatizado por sistemas externos em dados (estruturados e legíveis por máquina), e a página contém as regras de abertos utilização?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/lgpd/lgpd"
+    ],
+    "LGPD E GOVERNO DIGITAL_Regulamenta a Lei Federal nº 14.129/2021 (Governo Digital) e divulga a normativa em seu portal?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "LGPD E GOVERNO DIGITAL_Realiza e divulga resultados de pesquisas de satisfação?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "RENÚNCIAS FISCAIS_Divulga as desonerações tributárias concedidas e a fundamentação legal individualizada?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/renunciasfiscais/renunciasfiscais"
+    ],
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/renunciasfiscais/renunciasfiscais"
+    ],
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_Atualidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_Série Histórica": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_Gravação de Relatório": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_Filtro de Pesquisa": "Não Atende",
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/renunciasfiscais/renunciasfiscais"
+    ],
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_Atualidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_Série Histórica": "Não Atende",
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_Gravação de Relatório": "Não Atende",
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_Filtro de Pesquisa": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/renunciasfiscais/renunciasfiscais"
+    ],
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_Atualidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_Série Histórica": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_Gravação de Relatório": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_Filtro de Pesquisa": "Não Atende",
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/emendasparlamentares/emendasparlamentares"
+    ],
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_Atualidade": "Não Atende",
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_Série Histórica": "Não Atende",
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_Gravação de Relatório": "Não Atende",
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_Filtro de Pesquisa": "Não Atende",
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/emendasparlamentares/emendasparlamentares"
+    ],
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_Atualidade": "Não Atende",
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_Série Histórica": "Não Atende",
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_Gravação de Relatório": "Não Atende",
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_Filtro de Pesquisa": "Não Atende",
+    "SAÚDE_Divulga o plano de saúde, a programação anual e o relatório de gestão?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/planomunicipalsaude/planomunicipalsaude"
+    ],
+    "SAÚDE_Divulga o plano de saúde, a programação anual e o relatório de gestão?_Atualidade": "Não Atende",
+    "SAÚDE_Divulga o plano de saúde, a programação anual e o relatório de gestão?_Série Histórica": "Não Atende",
+    "SAÚDE_Divulga o plano de saúde, a programação anual e o relatório de gestão?_Filtro de Pesquisa": "Não Atende",
+    "SAÚDE_Divulga informações relacionadas aos serviços de saúde, indicando os horários, os profissionais prestadores de serviços, as especialidades e local?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "SAÚDE_Divulga informações relacionadas aos serviços de saúde, indicando os horários, os profissionais prestadores de serviços, as especialidades e local?_Atualidade": "Não Atende",
+    "SAÚDE_Divulga informações relacionadas aos serviços de saúde, indicando os horários, os profissionais prestadores de serviços, as especialidades e local?_Filtro de Pesquisa": "Não Atende",
+    "SAÚDE_Divulga a lista de espera de regulação para acesso às consultas,exames e serviços médicos ?_links": [],
+    "SAÚDE_Divulga lista dos medicamentos a serem fornecidos pelo SUS e informações de como obter medicamentos, incluindo os de alto custo?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "SAÚDE_Divulga lista dos medicamentos a serem fornecidos pelo SUS e informações de como obter medicamentos, incluindo os de alto custo?_Atualidade": "Não Atende",
+    "SAÚDE_Divulga lista dos medicamentos a serem fornecidos pelo SUS e informações de como obter medicamentos, incluindo os de alto custo?_Filtro de Pesquisa": "Não Atende",
+    "SAÚDE_Divulga os estoques de medicamentos das farmácias públicas?_links": [],
+    "SAÚDE_Divulga os estoques de medicamentos das farmácias públicas?_Atualidade": "Atende",
+    "SAÚDE_Divulga os estoques de medicamentos das farmácias públicas?_Filtro de Pesquisa": "Atende",
+    "EDUCAÇÃO_Divulga o plano de educação e o respectivo relatório de resultados?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/acessoInformacao/planomunicipaleducacao/planomunicipaleducacao"
+    ],
+    "EDUCAÇÃO_Divulga o plano de educação e o respectivo relatório de resultados?_Atualidade": "Não Atende",
+    "EDUCAÇÃO_Divulga o plano de educação e o respectivo relatório de resultados?_Série Histórica": "Não Atende",
+    "EDUCAÇÃO_Divulga o plano de educação e o respectivo relatório de resultados?_Filtro de Pesquisa": "Não Atende",
+    "EDUCAÇÃO_Divulga a lista de espera em creches públicas e os critérios de priorização de acesso a elas?_links": [
+        "https://www.transparencia.saojoaodosoter.ma.gov.br/"
+    ],
+    "EDUCAÇÃO_Divulga a lista de espera em creches públicas e os critérios de priorização de acesso a elas?_Atualidade": "Não Atende",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga a estrutura organizacional?_Disponibilidade": "Atende",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga a estrutura organizacional?_Disponibilidade_obs": "",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga competências e/ou atribuições?_Disponibilidade": "Não Atende",
+    "LGPD E GOVERNO DIGITAL_Publica a sua Política de Privacidade e Proteção de Dados?_Disponibilidade": "Não Atende",
+    "LGPD E GOVERNO DIGITAL_Possibilita a demanda e o acesso a serviços públicos por meio digital, sem necessidade de solicitação presencial?_Disponibilidade": "Não Atende",
+    "LGPD E GOVERNO DIGITAL_Possibilita o acesso automatizado por sistemas externos em dados (estruturados e legíveis por máquina), e a página contém as regras de abertos utilização?_Disponibilidade": "Não Atende",
+    "LGPD E GOVERNO DIGITAL_Regulamenta a Lei Federal nº 14.129/2021 (Governo Digital) e divulga a normativa em seu portal?_Disponibilidade": "Não Atende",
+    "LGPD E GOVERNO DIGITAL_Realiza e divulga resultados de pesquisas de satisfação?_Disponibilidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga as desonerações tributárias concedidas e a fundamentação legal individualizada?_Disponibilidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_Disponibilidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_Disponibilidade": "Não Atende",
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_Disponibilidade": "Não Atende",
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_Disponibilidade": "Não Atende",
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_Disponibilidade": "Não Atende",
+    "SAÚDE_Divulga o plano de saúde, a programação anual e o relatório de gestão?_Disponibilidade": "Não Atende",
+    "SAÚDE_Divulga informações relacionadas aos serviços de saúde, indicando os horários, os profissionais prestadores de serviços, as especialidades e local?_Disponibilidade": "Não Atende",
+    "SAÚDE_Divulga a lista de espera de regulação para acesso às consultas,exames e serviços médicos ?_Disponibilidade": "Atende",
+    "SAÚDE_Divulga lista dos medicamentos a serem fornecidos pelo SUS e informações de como obter medicamentos, incluindo os de alto custo?_Disponibilidade": "Não Atende",
+    "SAÚDE_Divulga os estoques de medicamentos das farmácias públicas?_Disponibilidade": "Atende",
+    "EDUCAÇÃO_Divulga o plano de educação e o respectivo relatório de resultados?_Disponibilidade": "Não Atende",
+    "EDUCAÇÃO_Divulga a lista de espera em creches públicas e os critérios de priorização de acesso a elas?_Disponibilidade": "Não Atende",
+    "INFORMAÇÕES INSTITUCIONAIS_Divulga competências e/ou atribuições?_Disponibilidade_obs": "Existe algumas secretárias sem informação das competências cadastradas.",
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_Disponibilidade": "Não Atende",
+    "RECEITA_Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?_Disponibilidade_obs": "O ente divulga de forma expressa em seção específica informações as inscrições na dívida\nativa, estando em desacordo com o critério da Disponibilidade, Cartilha da ATRICON.",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_Atualidade_obs": "Considera-se que as informações estão atualizadas quando as mais recentes datarem no máximo há 30 dias do dia em que está sendo realizada a consulta.",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências recebidas a partir da celebração de convênios/acordos com indicação, no mínimo, do valor total previsto dos recursos envolvidos, do valor recebido, do objeto e da origem (órgão repassador/concedente)?_Série Histórica_obs": "Considera-se que existe histórico de informações quando os dados disponibilizados referirem-se, pelo menos, a 3 anos que antecedem ao da pesquisa.",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_Atualidade_obs": "Considera-se que as informações estão atualizadas quando as mais recentes datarem no máximo há 30 dias do dia em que está sendo realizada a consulta.",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica as transferências realizadas a partir da celebração de convênios/acordos/ajustes, com indicação, no mínimo, do beneficiário, do objeto, do valor total previsto para repasse e do valor concedido?_Série Histórica_obs": "Considera-se que existe histórico de informações quando os dados disponibilizados referirem-se, pelo menos, a 3 anos que antecedem ao da pesquisa.",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_Atualidade_obs": "Considera-se que as informações estão atualizadas quando as mais recentes datarem no máximo há 30 dias do dia em que está sendo realizada a consulta.",
+    "CONVÊNIOS E TRANSFERÊNCIAS_Identifica os acordos firmados que não envolvam transferência de recursos financeiros, identificando as partes, o objeto e as obrigações ajustadas?_Série Histórica_obs": "Considera-se que existe histórico de informações quando os dados disponibilizados referirem-se, pelo menos, a 3 anos que antecedem ao da pesquisa.",
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_Atualidade_obs": "Considera-se que as informações estão atualizadas quando as mais recentes datarem de, no máximo 30 dias da data em que for realizada a consulta.",
+    "RECURSOS HUMANOS_Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, as respectivas lotações, as suas datas de admissão/exoneração/inativação e a carga horária do cargo/função ocupada/desempenhada?_Série Histórica_obs": "Considera-se que existe histórico de informações quando os dados disponibilizados referirem-se, pelo menos, a 3 anos que antecedem ao da pesquisa.",
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_Disponibilidade": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Disponibilidade": "Não Atende",
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_Disponibilidade": "Não Atende",
+    "RECURSOS HUMANOS_Divulga a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para provimento de cargos e empregos públicos?_Disponibilidade": "Não Atende",
+    "RECURSOS HUMANOS_Divulga informações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão, contendo no mínimo a lista de aprovados com as classificações e as nomeações?_Disponibilidade": "Não Atende",
+    "DIÁRIAS_Divulga o nome e o cargo/função do beneficiário, além do valor total recebido, número de diárias usufruídas por afastamento, período de afastamento, motivo do afastamento e local de destino?_Disponibilidade": "Atende",
+    "DIÁRIAS_Divulga tabela ou relação que explicite os valores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local?_Disponibilidade": "Não Atende",
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_Disponibilidade": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos editais de licitação?_Disponibilidade": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos demais documentos das fases interna e externa das licitações?_Disponibilidade": "Atende",
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_Disponibilidade": "Atende",
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_Disponibilidade": "Atende",
+    "LICITAÇÕES_Publica plano anual de contratações?_Disponibilidade": "Não Atende",
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_Disponibilidade": "Não Atende",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Disponibilidade": "Atende",
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_Disponibilidade": "Atende",
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_Disponibilidade": "Não Atende",
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_Disponibilidade": "Não Atende",
+    "OBRAS_Divulga informações sobre as obras contendo o objeto, a situação atual, as datas de início e de conclusão da obra, empresa contratada e o percentual concluído?_Disponibilidade": "Não Atende",
+    "OBRAS_Divulga os quantitativos, os preços unitários e totais contratados?_Disponibilidade": "Não Atende",
+    "OBRAS_Divulga os quantitativos executados e os preços efetivamente pagos?_Disponibilidade": "Não Atende",
+    "OBRAS_Divulga relação das obras paralisadas contendo o motivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o reinício da sua execução?_Disponibilidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?_Disponibilidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão ou Atividades?_Disponibilidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a íntegra da decisão da apreciação ou julgamento das contas pelo Tribunal de Contas?_Disponibilidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o resultado do julgamento das Contas do Chefe do Poder Executivo pelo Poder Legislativo?_Disponibilidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão Fiscal (RGF)?_Disponibilidade": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório Resumido da Execução Orçamentária (RREO)?_Disponibilidade": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o plano estratégico institucional?_Disponibilidade": "Não Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a Lei do Plano Plurianual (PPA) e seus anexos?_Disponibilidade": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a Lei de Diretrizes Orçamentárias (LDO) e seus anexos?_Disponibilidade": "Atende",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a Lei Orçamentária (LOA) e seus anexos?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Existe o SIC no site e indica a unidade/setor responsável?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Indica o endereço físico, o telefone e o e-mail da unidade responsável pelo SIC, além do horário de funcionamento?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Há possibilidade de envio de pedidos de informação de forma eletrônica (e-SIC)?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_A solicitação por meio de eSic é simples, ou seja, sem a exigência de itens de identificação do requerente que dificultem ou impossibilitem o acesso à informação, tais como: envio de documentos, assinatura reconhecida, declaração de responsabilidade, maioridade?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga nesta seção, instrumento normativo local que regulamente a Lei nº 12.527/2011 – LAI?_Disponibilidade": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga, na seção relativa ao e-SIC, os prazos de resposta ao cidadão, incluindo o recursal, e as autoridades competentes para o exame dos pedidos, além do procedimento referente à realização do pedido e de eventual recurso?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga relatório anual estatístico contendo a quantidade de pedidos de acesso recebidos, atendidos, indeferidos, bem como informações genéricas sobre os solicitantes?_Disponibilidade": "Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_Disponibilidade": "Não Atende",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_Disponibilidade": "Não Atende",
+    "ACESSIBILIDADE_O site oficial e o portal de transparência contêm símbolo de acessibilidade em destaque?_Disponibilidade": "Atende",
+    "ACESSIBILIDADE_O site e o portal de transparência contêm exibição do “caminho” de páginas percorridas pelo usuário?_Disponibilidade": "Não Atende",
+    "ACESSIBILIDADE_O site e o portal de transparência contêm opção de alto contraste?_Disponibilidade": "Atende",
+    "ACESSIBILIDADE_O site e o portal de transparência contêm ferramenta de redimensionamento de texto?_Disponibilidade": "Atende",
+    "ACESSIBILIDADE_Contém mapa do site institucional?_Disponibilidade": "Atende",
+    "OUVIDORIA_Há informações sobre o atendimento presencial pela Ouvidoria (Indicação de endereço físico e telefone, além do horário de funcionamento)?_Disponibilidade": "Atende",
+    "OUVIDORIA_Há canal eletrônico de acesso/interação com a ouvidoria?_Disponibilidade": "Atende",
+    "OUVIDORIA_Divulga Carta de Serviços ao Usuário?_Disponibilidade": "Atende",
+    "LGPD E GOVERNO DIGITAL_Identifica o encarregado/responsável pelo tratamento de dados pessoais e disponibiliza Canal de Comunicação (telefone e/ou e-mail)?_Disponibilidade": "Não Atende",
+    "RECURSOS HUMANOS_Identifica a remuneração nominal de cada servidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções?_Disponibilidade_obs": "O ente não publica no portal de forma expressa em seção específica a remuneração nominal de cada\nservidor/autoridade/Membro e a tabela com o padrão remuneratório dos cargos e funções, estando\nem desacordo com a Cartilha da ATRICON.",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Atualidade_obs": "",
+    "RECURSOS HUMANOS_Publica lista de estagiários?_Disponibilidade_obs": "O ente não publica no portal nem faz declaração de inexistência, de forma expressa em seção específica a\nlista de seus estagiários, estando em desacordo com a Cartilha da ATRICON,",
+    "RECURSOS HUMANOS_Publica lista dos terceirizados que prestam serviços para o Poder ou órgão/entidades, contendo, em relação a cada um deles: nome completo, função ou atividade exercida e nome da empresa empregadora?_Disponibilidade_obs": "O ente não publica no portal nem faz declaração de inexistência, de forma expressa em seção específica a\nlista dos terceirizados que prestam serviços para o Poder Executivo, contendo, em relação a cada um deles:\nnome completo, função ou atividade exercida e nome da empresa empregadora, estando em desacordo com a\nCartilha da ATRICON.",
+    "RECURSOS HUMANOS_Divulga a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para provimento de cargos e empregos públicos?_Disponibilidade_obs": "O ente não publica no portal nem faz declaração de inexistência, de forma expressa em seção específica de\ninformações da a íntegra dos editais de concursos e seleções públicas realizados pelo Poder ou órgão para\nprovimento de cargos e empregos públicos, estando em desacordo com a Cartilha da ATRICON.",
+    "RECURSOS HUMANOS_Divulga informações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão, contendo no mínimo a lista de aprovados com as classificações e as nomeações?_Disponibilidade_obs": "O ente não publica no portal nem faz declaração de inexistência, de forma expressa em seção específica de\ninformações sobre os demais atos dos concursos públicos e processos seletivos do Poder ou órgão: vagas\nefetivamente preenchidas, lista de aprovados com as classificações, fila de espera/cadastro reserva e validade,\nestando em desacordo com a Cartilha da ATRICON",
+    "DIÁRIAS_Divulga tabela ou relação que explicite os valores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local?_Disponibilidade_obs": "O ente não publica no portal de forma expressa em seção específica a tabela ou relação que explicite os\nvalores das diárias dentro do Estado, fora do Estado e fora do país, conforme legislação local Cartilha,\nestando em desacordo com a Cartilha da ATRICON,",
+    "LICITAÇÕES_Divulga a relação das licitações em ordem sequencial, informando o número e modalidade licitatória, o objeto, a data, o valor estimado/homologado e a situação?_Atualidade_obs": "Considera-se que as informações estão atualizadas quando as mais recentes datarem de, no máximo 30 dias da data em que for realizada a consulta.",
+    "LICITAÇÕES_Divulga a íntegra dos editais de licitação?_Atualidade_obs": "O ente não publica informações sobre editais de licitações do exercício financeiro de 2025, estando\nem desacordo com o critério da atualidade, Cartilha da ATRICON\n\n\nConsidera-se que as informações estão atualizadas quando as mais recentes datarem de, no máximo 30 dias da data em que for realizada a consulta.",
+    "LICITAÇÕES_Divulga a íntegra dos demais documentos das fases interna e externa das licitações?_Atualidade_obs": "exercício financeiro de 2025, estando em desacordo com o critério da atualidade, Cartilha da\nATRICON.\n\nConsidera-se que as informações estão atualizadas quando as mais recentes datarem de, no máximo 30 dias da data em que for realizada a consulta.",
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_Atualidade_obs": "O ente só publica no portal de forma expressa em seção específica os processos de dispensa do\nexercício de 2024 de inexigibilidades de licitação de 2019, estando em desacordo com os critérios\nda ATUALIDADE e da SÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "LICITAÇÕES_Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação?_Série Histórica_obs": "O ente só publica no portal de forma expressa em seção específica os processos de dispensa do\nexercício de 2024 de inexigibilidades de licitação de 2019, estando em desacordo com os critérios\nda ATUALIDADE e da SÉRIE HISTÓRICA, Cartilha da ATRICON",
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_Atualidade_obs": "O ente só publica no portal de forma expressa em seção específica os processos de Atas de Adesão – SRP\ndo exercício de 2017, 2020 e 2021, de inexigibilidades de licitação de 2019, estando em desacordo com os\ncritérios da ATUALIDADE e da SÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "LICITAÇÕES_Divulga a íntegra das Atas de Adesão – SRP?_Série Histórica_obs": "O ente só publica no portal de forma expressa em seção específica os processos de Atas de Adesão – SRP\ndo exercício de 2017, 2020 e 2021, de inexigibilidades de licitação de 2019, estando em desacordo com os\ncritérios da ATUALIDADE e da SÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "LICITAÇÕES_Publica plano anual de contratações?_Disponibilidade_obs": "O ente não publica no portal de forma expressa em seção específica informações do plano de\ncontratações anual (art. 12, VII, da Lei n. 14.133), Cartilha da ATRICON.",
+    "LICITAÇÕES_Divulga a relação dos licitantes e/ou contratados sancionados administrativamente pelo Poder ou órgão?_Disponibilidade_obs": "O ente não publica no portal de forma expressa em seção específica informações sobre os licitantes e/ou\ncontratados sancionados administrativamente pelo Poder Executivo, estando em desacordo com a\nCartilha da ATRICON.",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Atualidade_obs": "O ente publica no portal de forma expressa em seção específica informações dos contratos celebrados dos\nexercícios financeiros de 2014 a 2021, estando em desacordo com os critérios da ATUALIDADE e da\nSÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_Atualidade_obs": "O ente publica no portal de forma expressa em seção específica informações dos contratos celebrados dos\nexercícios financeiros de 2014 a 2021 e dos aditivos apenas do exercício de 2021, estando em desacordo\ncom os critérios da ATUALIDADE e da SÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "CONTRATOS_Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?_Série Histórica_obs": "O ente publica no portal de forma expressa em seção específica informações dos contratos celebrados dos\nexercícios financeiros de 2014 a 2021 e dos aditivos apenas do exercício de 2021, estando em desacordo\ncom os critérios da ATUALIDADE e da SÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "CONTRATOS_Divulga a relação dos contratos celebrados em ordem sequencial, com o seu respectivo resumo, contendo, no mínimo, indicação do contratado(a), do valor, do objeto e da vigência, bem como dos aditivos deles decorrentes?_Série Histórica_obs": "O ente publica no portal de forma expressa em seção específica informações dos contratos celebrados dos\nexercícios financeiros de 2014 a 2021, estando em desacordo com os critérios da ATUALIDADE e da\nSÉRIE HISTÓRICA, Cartilha da ATRICON.",
+    "CONTRATOS_Divulga a relação/lista dos fiscais de cada contrato vigente e encerrado?_Disponibilidade_obs": "O ente não publica no portal de forma expressa em seção específica a relação/lista dos fiscais de cada\ncontrato vigente e encerrado, estando em desacordo com a Cartilha da ATRICON.",
+    "CONTRATOS_Divulga a ordem cronológica de seus pagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem?_Disponibilidade_obs": "O ente não publica no portal de forma expressa em seção específica a ordem cronológica de seus\npagamentos, bem como as justificativas que fundamentaram a eventual alteração dessa ordem, estando\nem desacordo com a Cartilha da ATRICON",
+    "OBRAS_Divulga informações sobre as obras contendo o objeto, a situação atual, as datas de início e de conclusão da obra, empresa contratada e o percentual concluído?_Disponibilidade_obs": "O ente não publica de forma expressa em seção específica informações sobre obras: data de início,\netapas, percentual concluído, status e previsão de conclusão, estando em desacordo com a Cartilha da\nATRICON.",
+    "OBRAS_Divulga os quantitativos, os preços unitários e totais contratados?_Disponibilidade_obs": "O ente não publica de forma expressa em seção específica informações sobre os quantitativos, e os\npreços unitários e totais contratados estando em desacordo com a Cartilha da ATRICON.",
+    "OBRAS_Divulga os quantitativos executados e os preços efetivamente pagos?_Disponibilidade_obs": "O ente não publica de forma expressa em seção específica informações sobre os quantitativos\nexecutados e os preços praticado estando em desacordo com a Cartilha da ATRICON.",
+    "OBRAS_Divulga relação das obras paralisadas contendo o motivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o reinício da sua execução?_Disponibilidade_obs": "O ente não publica de forma expressa em seção específica relação das obras paralisadas contendo o\nmotivo, o responsável pela inexecução temporária do objeto do contrato e a data prevista para o\nreinício da sua execução de divulgação sobre obras.",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?_Disponibilidade_obs": "Deve ser divulgado o Balanço Geral do Poder ou Órgão, compreendendo, no mínimo, os demonstrativos contábeis: - Balanço Orçamentário; - Balanço\nFinanceiro; - Balanço Patrimonial; - Demonstrações das Variações Patrimoniais. Ainda que as informações sejam disponibilizadas em formato fechado\n(por exemplo, pdf), para que se tenha como atendido o critério, as informações devem constar em documento \"pesquisável\" (por exemplo, “pdf\npesquisável”).",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o Relatório de Gestão ou Atividades?_Disponibilidade_obs": "Deverá ser feita a divulgação do relatório de gestão ou atividades elaborado pelo chefe do Poder, órgão ou Poder ou órgão a respeito de sua gestão no\nexercício anterior, abrangendo os principais resultados sejam nas áreas finalísticas e/ou de gestão. Geralmente são divulgados os resultados\nconsolidados ou por área/setores. Ainda que as informações sejam disponibilizadas em formato fechado (por exemplo, pdf), para que se tenha como\natendido o critério, as informações devem constar em documento \"pesquisável\" (por exemplo, “pdf pesquisável”).",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga a íntegra da decisão da apreciação ou julgamento das contas pelo Tribunal de Contas?_Disponibilidade_obs": "Deverá ser feita a divulgação do resultado da apreciação e/ou julgamento das contas do Poder/Órgão pelo Tribunal de Contas. No caso de Tribunais de\nContas que não têm suas contas apreciadas pela própria Corte, atende ao critério o portal que divulgar a última manifestação opinativa a respeito do\ntema. Para atendimento ao critério, não basta a divulgação da conclusão do Acórdão ou Parecer emitido pelo Tribunal de Contas. É necessário que haja\na disponibilização do documento na íntegra.",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o resultado do julgamento das Contas do Chefe do Poder Executivo pelo Poder Legislativo?_Disponibilidade_obs": "Deve ser divulgado o resultado dos Pareceres Prévios emitidos pelo Tribunal de Contas sobre as contas do Chefe do Poder Executivo bem como o\nresultado dos julgamentos pelo Poder Legislativo. É necessária a informação e a disponibilização das íntegras das Decisões (podendo ser um link para o\nPortal do Legislativo ou Tribunal de Contas, desde que acesse diretamente o local em que está a Decisão).",
+    "PLANEJAMENTO E PRESTAÇÃO DE CONTAS_Divulga o plano estratégico institucional?_Disponibilidade_obs": "Devem ser divulgados os objetivos estratégicos da Poder ou órgão e os indicadores definidos para mensurar o alcance desses objetivos (plano\nestratégico institucional ou instrumento equivalente).",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga nesta seção, instrumento normativo local que regulamente a Lei nº 12.527/2011 – LAI?_Disponibilidade_obs": "O ente não publica de forma expressa em seção específica instrumento normativo local que\nregulamente a Lei nº 12.527/2011 – LAI, Cartilha da ATRICON.",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista de documentos classificados em cada grau de sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se encontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo?_Disponibilidade_obs": "O ente não divulga de forma expressa em seção específica , lista de documentos classificados em cada grau\nde sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se\nencontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo bem como não divulga\nlista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses, Cartilha da\nATRICON.",
+    "SIC (SERVIÇO DE INFORMAÇÃO AO CIDADÃO)_Divulga lista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses?_Disponibilidade_obs": "O ente não divulga de forma expressa em seção específica lista de documentos classificados em cada grau\nde sigilo, contendo pelo menos o assunto sobre o qual versa a informação, a categoria na qual ela se\nencontra, o dispositivo legal que fundamenta a classificação e o respectivo prazo bem como não divulga\nlista das informações que tenham sido desclassificadas nos últimos 12 (doze) meses, Cartilha da\nATRICON.",
+    "ACESSIBILIDADE_O site e o portal de transparência contêm exibição do “caminho” de páginas percorridas pelo usuário?_Disponibilidade_obs": "Deve exibir o “caminho” de páginas percorridas pelo usuário.",
+    "LGPD E GOVERNO DIGITAL_Identifica o encarregado/responsável pelo tratamento de dados pessoais e disponibiliza Canal de Comunicação (telefone e/ou e-mail)?_Disponibilidade_obs": "Conforme exigência expressa da LGPD, deve ser divulgado o nome do encarregado/responsável pelo tratamento de dados pessoais e disponibilizado o\nCanal de Comunicação (telefone e/ou e-mail) com esse servidor.",
+    "LGPD E GOVERNO DIGITAL_Publica a sua Política de Privacidade e Proteção de Dados?_Disponibilidade_obs": "Da mesma forma, em atendimento à LGPD, publica a Política de Privacidade e Proteção de Dados adotada pelo Poder ou órgão.",
+    "LGPD E GOVERNO DIGITAL_Possibilita a demanda e o acesso a serviços públicos por meio digital, sem necessidade de solicitação presencial?_Disponibilidade_obs": "O ente não prestou informações de forma expressa em seção específica sore a LGPD, estando\nem desacordo com o critério da disponibilidade, Cartilha da ATRICON.",
+    "LGPD E GOVERNO DIGITAL_Possibilita o acesso automatizado por sistemas externos em dados (estruturados e legíveis por máquina), e a página contém as regras de abertos utilização?_Disponibilidade_obs": "O ente não prestou informações de forma expressa em seção específica sore a LGPD, estando\nem desacordo com o critério da disponibilidade, Cartilha da ATRICON.",
+    "LGPD E GOVERNO DIGITAL_Regulamenta a Lei Federal nº 14.129/2021 (Governo Digital) e divulga a normativa em seu portal?_Disponibilidade_obs": "A regulamentação da Lei Federal nº 14.129/2021 deve estar disponível em local de fácil acesso.",
+    "LGPD E GOVERNO DIGITAL_Realiza e divulga resultados de pesquisas de satisfação?_Disponibilidade_obs": "Devem ser divulgados os resultados de pesquisas de satisfação aplicadas periodicamente junto aos usuários de seus serviços para assegurar a efetiva\nparticipação desses na avaliação dos serviços públicos, identificar lacunas e deficiências e reorientar e ajustar a prestação dos serviços. São exemplos de\npesquisa de satisfação as realizadas juntos aos usuários das ouvidorias e as aplicadas em cursos, treinamentos etc.",
+    "RENÚNCIAS FISCAIS_Divulga as desonerações tributárias concedidas e a fundamentação legal individualizada?_Disponibilidade_obs": "Neste critério, exige-se o detalhamento das informações sobre desonerações, notadamente quanto às informações mais conceituais: - espécies de\ndesonerações concedidas pelo Poder Executivo; - requisitos necessários para acesso a cada uma delas; - o procedimento previsto para as respectivas\nconcessões. Com essa disponibilização, os cidadãos podem saber se fazem jus a algum tipo de benefício fiscal e fiscalizar se as desonerações\nconcedidas atendem aos requisitos apresentados.",
+    "RENÚNCIAS FISCAIS_Divulga os valores da renúncia fiscal prevista e realizada, por tipo ou espécie de benefício ou incentivo fiscal?_Disponibilidade_obs": "Aqui se adentra nos dados quantitativos das renúncias fiscais, devendo ser publicados as seguintes informações quanto aos gastos tributários já\nrealizados e, quando aplicável, aos em andamento: - espécie; - justificativa e fundamento legal; - previsão do montante a ser renunciado de acordo com\nas leis orçamentárias; - valor efetivamente renunciado ou valor agregado na arrecadação.",
+    "RENÚNCIAS FISCAIS_Identifica os beneficiários das desonerações tributárias (benefícios ou incentivos fiscais)?_Disponibilidade_obs": "Este critério prevê um detalhamento ainda maior sobre os chamados “gastos tributários”. Exige-se, no mínimo, a identificação de: - beneficiários\n(nome e CNPJ); - setor; - espécie do benefício; - produto (se aplicável),; - valor; - quando aplicável, contrapartida e/ou impacto obtido e/ou estimado\n(dados sobre resultados sociais, econômicos e/ou ambientais dos incentivos fiscais que tenham sido alcançados, tais como: sintonia com os objetivos de\ndesenvolvimento sustentável, da organização das nações unidas; geração de emprego direto e/ou indireto; investimento direto na região; melhoria da\ninfraestrutura; investimento em eficiência energética, energia limpa e/ou retrofit de prédios; inovação tecnológica; qualificação/inclusão da mão de\nobra; qualidade ambiental; apoio a p&; desenvolvimento regional); e - vigência (início e fim, devendo ser informado quando é por prazo\nindeterminado).",
+    "RENÚNCIAS FISCAIS_Divulga informações sobre projetos de incentivo à cultura (incluindo esportivos), identificando os projetos aprovados, o respectivo beneficiárioe o valor aprovado?_Disponibilidade_obs": "Os exemplos mais recorrentes de renúncias fiscais são os das leis de incentivo à cultura e ao esporte, podendo ser federal, estadual ou municipal. No\ncaso da União, o caso mais consagrado é a Lei de Incentivo à Cultura federal, também conhecida por Lei Rouanet. Sobre tais benefícios, exige-se o\nseguinte detalhamento: - nome do patrocinador/doador; - beneficiário; - data de captação; - valor captado; - andamento do projeto; - prazo.",
+    "EMENDAS PARLAMENTARES_Identifica as emendas parlamentares recebidas, contendo informações sobre a origem, a forma de repasse, o tipo de emenda, o número da emenda, a autoria, o valor previsto e realizado, o objeto e função de governo?_Disponibilidade_obs": "A emenda parlamentar é o instrumento que permite aos deputados e senadores realizarem alterações no orçamento anual. As emendas individuais\nimpositivas apresentadas ao projeto de lei orçamentária anual (PLOA) poderão alocar recursos a órgãos ou Poderes ou órgãos da administração pública\ndireta ou indireta da União, dos Estados e Municípios e do Distrito Federal, consórcio público, organização da sociedade civil ou serviço social\nautônomo. As emendas são chamadas impositivas porque o Executivo é obrigado a executá-las quando aprovadas. Nesse ponto, exige-se a divulgação\ndos seguintes dados: - autoria; - valor previsto; - valor realizado; - objeto; - função de governo. Em caso de não ocorrência, deve ser divulgada\ninformação, de forma explícita, quanto à inexistência de emendas parlamentares.",
+    "EMENDAS PARLAMENTARES_Demonstra a execução orçamentária e financeira oriunda das emendas pix”?_Disponibilidade_obs": "As emendas individuais impositivas apresentadas ao projeto de lei orçamentária anual, popularmente conhecidas como Emendas PIX, poderão alocar\nrecursos diretamente a Estados, ao Distrito Federal e a Municípios por meio de transferência especial (sem necessidade de estabelecer previamente a\nfinalidade, ficando a cargo do ente recebedor) ou transferência com finalidade definida. Entretanto, é dever do ente recebedor demonstrar e detalhar a\nexecução orçamentária e financeira dessas transferências, divulgando as informações acerca dos empenhos, liquidações e pagamentos, com\nidentificação do objeto, valores, credor, dentre outras informações. Em caso de não ocorrência, deve ser divulgada informação, de forma explícita,\nquanto à inexistência das transferências de que trata da Emenda Constitucional nº 105.",
+    "SAÚDE_Divulga o plano de saúde, a programação anual e o relatório de gestão?_Disponibilidade_obs": "Devem ser divulgados o plano de saúde, a programação anual e o relatório de gestão referente a essa área de atuação do Poder Executivo.",
+    "SAÚDE_Divulga informações relacionadas aos serviços de saúde, indicando os horários, os profissionais prestadores de serviços, as especialidades e local?_Disponibilidade_obs": "O ente não divulga no portal informações relacionadas aos serviços de saúde, indicando os\nhorários, os profissionais prestadores de serviços, as especialidades e local, estando em desacordo\ncom a Cartilha da ATRICON",
+    "SAÚDE_Divulga lista dos medicamentos a serem fornecidos pelo SUS e informações de como obter medicamentos, incluindo os de alto custo?_Disponibilidade_obs": "Na mesma linha do critério anterior, exige-se a divulgação da lista dos medicamentos a serem fornecidos pelo SUS e informações de como obter\nmedicamentos de alto custo.",
+    "EDUCAÇÃO_Divulga o plano de educação e o respectivo relatório de resultados?_Disponibilidade_obs": "Devem ser divulgados o plano de educação e o respectivo relatório de resultados.",
+    "EDUCAÇÃO_Divulga a lista de espera em creches públicas e os critérios de priorização de acesso a elas?_Disponibilidade_obs": "O ente não divulga no portal a lista de espera em creches públicas e os critérios de priorização de\nacesso a elas, estando em desacordo com a Cartilha da ATRICON"
+}
