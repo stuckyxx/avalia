@@ -149,9 +149,10 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
             for item in perguntas:
                 p_item = doc.add_paragraph()
                 p_item.add_run(f"{item['topico']} - {item['criterio']} ({item.get('classificacao', '').upper()})").bold = True
-                doc.add_paragraph() #paragrafo
                 observacoes_finais = []
+                doc.add_paragraph() #paragrafo
                 subcriterios_nao_atendidos = []
+                
                 
                 for subcriterio in item["subcriterios"]:
                     chave_resposta = f"{secao}_{item['criterio']}_{subcriterio}"
@@ -159,6 +160,7 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
                         subcriterios_nao_atendidos.append(subcriterio)
                         obs = respostas.get(f"{chave_resposta}_obs", "")
                         if obs: observacoes_finais.append((subcriterio, obs))
+                        doc.add_paragraph() #paragrafo
 
                 if subcriterios_nao_atendidos:
                     for sub in subcriterios_nao_atendidos:
@@ -168,35 +170,32 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
                      p_item.add_run(f"\n• Status: ").italic = True
                      run_status = p_item.add_run("Atende"); run_status.bold = True; run_status.font.color.rgb = RGBColor(0x00, 0x80, 0x00)
 
-                # --- [INÍCIO DA ALTERAÇÃO] ---
+                # --- [INÍCIO DO BLOCO CORRIGIDO] ---
                 chave_links_pergunta = f"{secao}_{item['criterio']}_links"
                 links_finais = list(set(respostas.get(chave_links_pergunta, [])))
 
                 if links_finais or observacoes_finais:
-                    # Adiciona o cabeçalho principal
-                    doc.add_paragraph("Links e Observações:").runs[0].bold = True
+                    # Adiciona todo o conteúdo ao parágrafo JÁ EXISTENTE (p_item)
+                    # para garantir que não se separe do critério.
+                    p_item.add_run("\n") # Adiciona um espaço antes do bloco
+                    p_item.add_run("\nLinks e Observações:").bold = True
 
-                    # Adiciona os links em um parágrafo próprio
+                    # Adiciona os links
                     if links_finais:
-                        p_links = doc.add_paragraph()
-                        # Constrói o texto dos links
                         texto_links = "\n".join([f"- Link: {link}" for link in links_finais])
-                        p_links.add_run(texto_links)
+                        p_item.add_run("\n" + texto_links)
                     
-                    # Se ambos existirem, adiciona o separador em seu próprio parágrafo
+                    # Adiciona uma linha em branco como separador se ambos existirem
                     if links_finais and observacoes_finais:
-                        doc.add_paragraph("")
+                        p_item.add_run("\n")
 
-                    # Adiciona as observações em um parágrafo próprio
+                    # Adiciona as observações
                     if observacoes_finais:
-                        p_obs = doc.add_paragraph()
                         for i, (sub, obs_text) in enumerate(observacoes_finais):
-                            if i > 0: p_obs.add_run("\n")
-                            p_obs.add_run(f"- Observação ({sub}): ")
-                            run_obs = p_obs.add_run(obs_text)
+                            p_item.add_run(f"\n- Observação ({sub}): ")
+                            run_obs = p_item.add_run(obs_text)
                             run_obs.font.color.rgb = RGBColor(0xFF, 0, 0)
-                            doc.add_paragraph
-                # --- [FIM DA ALTERAÇÃO] ---
+                # --- [FIM DO BLOCO CORRIGIDO] ---
 
             doc.add_paragraph()
 
