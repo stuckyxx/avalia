@@ -195,6 +195,7 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
                             p_obs.add_run(f"- Observação ({sub}): ")
                             run_obs = p_obs.add_run(obs_text)
                             run_obs.font.color.rgb = RGBColor(0xFF, 0, 0)
+                            doc.add_paragraph
                 # --- [FIM DA ALTERAÇÃO] ---
 
             doc.add_paragraph()
