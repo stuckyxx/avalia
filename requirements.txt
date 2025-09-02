@@ -6,3 +6,4 @@ beautifulsoup4
 python-docx
 aspose-words
 streamlit-authenticator
+docx2pdf
