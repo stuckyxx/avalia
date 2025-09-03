@@ -8,3 +8,4 @@ streamlit-authenticator
 docx2pdf
 pyyaml
 python-docx
+psycopg2-binary
