@@ -207,6 +207,37 @@ if matriz_completa:
         authenticator.logout('Logout', 'sidebar')
         st.sidebar.title(f"Bem-vindo(a),\n{st.session_state.get('name')}!")
         
+        # --- BLOCO DE CÓDIGO NOVO ADICIONADO AQUI ---
+        # Tenta restaurar a sessão a partir da URL se a avaliação ainda não foi iniciada
+        if "avaliacao_id" in st.query_params and not st.session_state.get('avaliacao_iniciada'):
+            try:
+                avaliacao_id_url = int(st.query_params["avaliacao_id"])
+                conn = conectar_db()
+                cursor = conn.cursor()
+                
+                # Busca os dados da avaliação e das respostas
+                cursor.execute("SELECT municipio, segmento FROM avaliacoes WHERE id=?", (avaliacao_id_url,))
+                avaliacao_info = cursor.fetchone()
+                
+                if avaliacao_info:
+                    cursor.execute("SELECT chave, valor FROM respostas WHERE avaliacao_id=?", (avaliacao_id_url,))
+                    respostas_db = cursor.fetchall()
+
+                    # Popula o session_state
+                    st.session_state.avaliacao_id = avaliacao_id_url
+                    st.session_state.municipio = avaliacao_info[0]
+                    st.session_state.segmento = avaliacao_info[1]
+                    st.session_state.respostas = {chave: valor for chave, valor in respostas_db}
+                    st.session_state.avaliacao_iniciada = True
+                    st.toast("Sessão restaurada a partir da URL!")
+                
+                conn.close()
+
+            except (ValueError, TypeError):
+                # Ignora se o ID na URL for inválido
+                pass
+        # --- FIM DO BLOCO NOVO ---
+        
         st.sidebar.header("Configuração da Avaliação")
         municipios = ["- Selecione -"] + sorted(matriz_completa.get("Municipios_MA", []))
         segmentos = ["- Selecione -"] + [k for k in matriz_completa.keys() if k != "Municipios_MA"]
@@ -245,6 +276,10 @@ if matriz_completa:
                 st.session_state.municipio = municipio_selecionado
                 st.session_state.segmento = segmento_selecionado
                 st.session_state.last_save_time = datetime.now()
+                
+                # --- LINHA ADICIONADA ---
+                st.query_params["avaliacao_id"] = st.session_state.avaliacao_id
+
                 st.rerun()
 
         if st.session_state.get('avaliacao_iniciada'):
