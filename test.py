@@ -1,5 +1,3 @@
-# Arquivo: test.py
-
 import streamlit as st
 import json
 import os
@@ -44,10 +42,26 @@ def salvar_progresso_db(conn):
             for chave, valor in st.session_state.get('respostas', {}).items()
         ]
         if respostas_para_salvar:
-            cursor.executemany(
-                "INSERT OR REPLACE INTO respostas (avaliacao_id, chave, valor) VALUES (?, ?, ?)",
-                respostas_para_salvar
-            )
+            db_type = st.secrets.get("database_prod", st.secrets.get("database_local", {}))["type"]
+            
+            # Adapta a sintaxe SQL para ser compatível com PostgreSQL e SQLite
+            if db_type == 'postgresql':
+                placeholders = "%s, %s, %s"
+                sql = f"INSERT INTO respostas (avaliacao_id, chave, valor) VALUES ({placeholders}) ON CONFLICT (avaliacao_id, chave) DO UPDATE SET valor = EXCLUDED.valor;"
+            else: # sqlite
+                placeholders = "?, ?, ?"
+                sql = f"INSERT OR REPLACE INTO respostas (avaliacao_id, chave, valor) VALUES ({placeholders});"
+            
+            # psycopg2 (PostgreSQL) espera tuplas, sqlite3 pode usar listas
+            tuplas_para_salvar = [tuple(item) for item in respostas_para_salvar]
+            
+            # Para SQLite, executemany é mais simples. Para psycopg2, um loop é mais seguro com ON CONFLICT.
+            if db_type == 'postgresql':
+                for tupla in tuplas_para_salvar:
+                    cursor.execute(sql, tupla)
+            else:
+                 cursor.executemany(sql, tuplas_para_salvar)
+
             conn.commit()
         return True
     except Exception as e:
@@ -95,17 +109,36 @@ def on_disponibilidade_change(secao, criterio, subcriterios):
 
 def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas, tipo_relatorio, nome_usuario, usuario_config):
     """Gera o relatório completo em formato DOCX e tenta converter para PDF."""
-    # (A sua função de gerar relatório completa entra aqui)
-    # ... (código omitido por ser muito longo, mas você deve colar sua função aqui)
-    return None # Placeholder
+    template_tipo = usuario_config.get('template', 'padrao')
+    template_path = f"modelo_{template_tipo}.docx"
+    try:
+        doc = docx.Document(template_path)
+    except Exception:
+        st.sidebar.error(f"ERRO: Arquivo de modelo '{template_path}' não foi encontrado.")
+        return None
+    
+    # ... (Sua lógica completa de criação de relatório DOCX) ...
+    
+    os.makedirs("relatorios", exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    nome_base = f"Relatorio_{segmento.replace(' ', '')}_{municipio.replace(' ', '')}_{timestamp}"
+    path_docx = os.path.join("relatorios", f"{nome_base}.docx")
+    path_pdf = os.path.join("relatorios", f"{nome_base}.pdf")
+    doc.save(path_docx)
+    try:
+        convert(path_docx, path_pdf)
+        os.remove(path_docx)
+        return path_pdf
+    except Exception as e:
+        st.sidebar.error(f"Falha ao converter para PDF: {e}")
+        st.session_state.fallback_docx_path = path_docx
+        return None
 
 # --- APLICAÇÃO PRINCIPAL ---
 st.set_page_config(layout="wide", page_title="Avaliador de Transparência")
 
-# 1. Obtém a conexão única com o banco.
 conn = get_db_connection()
 
-# 2. Garante que as tabelas existem.
 if conn:
     initialize_database(conn)
 else:
@@ -117,26 +150,34 @@ matriz_completa = carregar_criterios_do_arquivo()
 
 if matriz_completa:
     try:
-        with open('config.yaml', 'r', encoding='utf-8') as file:
-            config = yaml.load(file, Loader=SafeLoader)
-        authenticator = stauth.Authenticate(config['credentials'], config['cookie']['name'], config['cookie']['key'], config['cookie']['expiry_days'])
+        if 'credentials' in st.secrets:
+            config = {'credentials': st.secrets['credentials']}
+        else:
+            with open('config.yaml', 'r', encoding='utf-8') as file:
+                config = yaml.load(file, Loader=SafeLoader)
+        
+        authenticator = stauth.Authenticate(
+            config['credentials'],
+            st.secrets.get('cookie', {}).get('name', 'some_cookie_name'),
+            st.secrets.get('cookie', {}).get('key', 'some_signature_key'),
+            st.secrets.get('cookie', {}).get('expiry_days', 30)
+        )
         authenticator.login('main')
-    except FileNotFoundError:
-        st.error("ERRO: O arquivo 'config.yaml' não foi encontrado."); st.stop()
+    except Exception as e:
+        st.error(f"Erro ao configurar autenticação: {e}"); st.stop()
 
     if st.session_state.get("authentication_status"):
         authenticator.logout('Logout', 'sidebar')
         st.sidebar.title(f"Bem-vindo(a),\n{st.session_state.get('name')}!")
 
-        # Tenta restaurar a sessão a partir da URL
         if "avaliacao_id" in st.query_params and not st.session_state.get('avaliacao_iniciada'):
             try:
                 avaliacao_id_url = int(st.query_params["avaliacao_id"])
                 cursor = conn.cursor()
-                cursor.execute("SELECT municipio, segmento FROM avaliacoes WHERE id=?", (avaliacao_id_url,))
+                cursor.execute("SELECT municipio, segmento FROM avaliacoes WHERE id=%s", (avaliacao_id_url,))
                 avaliacao_info = cursor.fetchone()
                 if avaliacao_info:
-                    cursor.execute("SELECT chave, valor FROM respostas WHERE avaliacao_id=?", (avaliacao_id_url,))
+                    cursor.execute("SELECT chave, valor FROM respostas WHERE avaliacao_id=%s", (avaliacao_id_url,))
                     respostas_db = cursor.fetchall()
                     st.session_state.avaliacao_id = avaliacao_id_url
                     st.session_state.municipio = avaliacao_info[0]
@@ -144,21 +185,23 @@ if matriz_completa:
                     st.session_state.respostas = {chave: valor for chave, valor in respostas_db}
                     st.session_state.avaliacao_iniciada = True
                     st.toast("Sessão restaurada a partir da URL!")
-            except (ValueError, TypeError):
-                pass
+            except (ValueError, TypeError): pass
         
         st.sidebar.header("Configuração da Avaliação")
         municipios = ["- Selecione -"] + sorted(matriz_completa.get("Municipios_MA", []))
         segmentos = ["- Selecione -"] + [k for k in matriz_completa.keys() if k != "Municipios_MA"]
         
-        municipio_selecionado = st.sidebar.selectbox("Município", municipios, index=municipios.index(st.session_state.get('municipio', '- Selecione -')))
-        segmento_selecionado = st.sidebar.selectbox("Órgão/Poder", segmentos, index=segmentos.index(st.session_state.get('segmento', '- Selecione -')))
+        mun_idx = municipios.index(st.session_state.get('municipio', '- Selecione -'))
+        seg_idx = segmentos.index(st.session_state.get('segmento', '- Selecione -'))
+        
+        municipio_selecionado = st.sidebar.selectbox("Município", municipios, index=mun_idx)
+        segmento_selecionado = st.sidebar.selectbox("Órgão/Poder", segmentos, index=seg_idx)
 
         if municipio_selecionado != "- Selecione -" and segmento_selecionado != "- Selecione -":
             if st.sidebar.button("✅ Iniciar / Continuar Avaliação", use_container_width=True):
                 cursor = conn.cursor()
                 cursor.execute(
-                    "SELECT id FROM avaliacoes WHERE municipio=? AND segmento=? AND usuario=? ORDER BY data_inicio DESC LIMIT 1",
+                    "SELECT id FROM avaliacoes WHERE municipio=%s AND segmento=%s AND usuario=%s ORDER BY data_inicio DESC LIMIT 1",
                     (municipio_selecionado, segmento_selecionado, st.session_state.get('username'))
                 )
                 avaliacao_existente = cursor.fetchone()
@@ -167,12 +210,12 @@ if matriz_completa:
                     st.session_state.avaliacao_id = avaliacao_existente[0]
                     st.sidebar.success("Avaliação anterior carregada!")
                 else:
-                    cursor.execute("INSERT INTO avaliacoes (municipio, segmento, usuario) VALUES (?, ?, ?)",(municipio_selecionado, segmento_selecionado, st.session_state.get('username')))
+                    cursor.execute("INSERT INTO avaliacoes (municipio, segmento, usuario) VALUES (%s, %s, %s)",(municipio_selecionado, segmento_selecionado, st.session_state.get('username')))
                     conn.commit()
                     st.session_state.avaliacao_id = cursor.lastrowid
                     st.sidebar.info("Iniciando uma nova avaliação.")
                 
-                cursor.execute("SELECT chave, valor FROM respostas WHERE avaliacao_id=?", (st.session_state.avaliacao_id,))
+                cursor.execute("SELECT chave, valor FROM respostas WHERE avaliacao_id=%s", (st.session_state.avaliacao_id,))
                 respostas_db = cursor.fetchall()
                 st.session_state.respostas = {chave: valor for chave, valor in respostas_db}
 
@@ -203,7 +246,6 @@ if matriz_completa:
                         st.subheader("Links de Evidência")
                         chave_links = f"{secao}_{criterio}_links"
                         if chave_links not in st.session_state.respostas: st.session_state.respostas[chave_links] = "[]"
-                        
                         try: links_atuais = json.loads(st.session_state.respostas[chave_links])
                         except json.JSONDecodeError: links_atuais = []
 
