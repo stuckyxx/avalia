@@ -29,14 +29,7 @@ def carregar_criterios_do_arquivo(caminho_arquivo="criterios_por_topico.json"):
 
 def salvar_progresso_db(conn):
     """Salva as respostas da sessão atual no banco de dados usando a conexão fornecida."""
-    if 'avaliacao_id' not in st.session_state or not st.session_state.avaliacao_id:
-        st.toast("ID da avaliação não encontrado na sessão.")
-        return False
-        
-    if conn is None:
-        st.error("Conexão com o banco de dados não disponível para salvar.")
-        return False
-    
+    if 'avaliacao_id' not in st.session_state: return False
     try:
         cursor = conn.cursor()
         respostas_para_salvar = [
@@ -51,8 +44,7 @@ def salvar_progresso_db(conn):
             conn.commit()
         return True
     except Exception as e:
-        st.error(f"Erro ao salvar progresso: {e}")
-        return False
+        st.error(f"Erro ao salvar progresso: {e}"); return False
 
 @st.cache_data
 def calcular_indice_e_selo(respostas, matriz_perguntas):
@@ -85,6 +77,19 @@ def calcular_indice_e_selo(respostas, matriz_perguntas):
             else: selo = "Inicial"
     return {"indice": indice, "selo": selo}
 
+@st.cache_data
+def calcular_pontuacao_secao(respostas, perguntas_secao, nome_secao):
+    """Calcula a pontuação de uma seção específica."""
+    pesos = {"ESSENCIAL": 2.0, "OBRIGATÓRIA": 1.5, "RECOMENDADA": 1.0}
+    total_pontos_possiveis, pontos_obtidos = 0, 0
+    for item in perguntas_secao:
+        classificacao = item.get("classificacao", "RECOMENDADA").upper()
+        peso = pesos.get(classificacao, 1.0)
+        total_pontos_possiveis += peso
+        if not any(respostas.get(f"{nome_secao}_{item.get('criterio')}_{sub}") == "Não Atende" for sub in item.get("subcriterios",[])):
+            pontos_obtidos += peso
+    return (pontos_obtidos / total_pontos_possiveis * 100) if total_pontos_possiveis > 0 else 100
+
 def on_disponibilidade_change(secao, criterio, subcriterios):
     """Callback para atualizar subcritérios quando a Disponibilidade muda."""
     chave_disponibilidade = f"{secao}_{criterio}_Disponibilidade"
@@ -106,15 +111,11 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     # --- PÁGINA DE ROSTO ---
     p_title = doc.add_paragraph()
     p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run_title = p_title.add_run("PADRÃO MÍNIMO DE QUALIDADE")
-    run_title.font.size = Pt(22); run_title.bold = True
+    run_title = p_title.add_run("PADRÃO MÍNIMO DE QUALIDADE"); run_title.font.size = Pt(22); run_title.bold = True
     doc.add_paragraph()
-
     p_subtitulo = doc.add_paragraph(); p_subtitulo.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_subtitulo.add_run("Relatório de Transparência\n").bold = True
-    doc.add_paragraph()
+    p_subtitulo.add_run("Relatório de Transparência\n").bold = True; doc.add_paragraph()
     p_subtitulo.add_run(f"{segmento} de {municipio}").bold = True
-    
     resultados = calcular_indice_e_selo(respostas, matriz_perguntas)
     doc.add_paragraph()
     p_score = doc.add_paragraph(f"{resultados['indice']:.2f}%"); p_score.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -122,7 +123,6 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     p_selo = doc.add_paragraph(f"{resultados['selo']}"); p_selo.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_selo.runs[0].font.size = Pt(24); p_selo.runs[0].bold = True
     doc.add_paragraph(); doc.add_paragraph()
-    
     texto_intro = f"Com base na Lei 12.527/2011 (Lei de Acesso à Informação), o nosso controle de qualidade fez uma avaliação geral da {segmento} de {municipio}, na qual, apresentou as seguintes informações:"
     doc.add_paragraph(texto_intro); doc.add_paragraph()
     doc.add_paragraph(f"Exercício: {datetime.now().year}"); doc.add_paragraph()
@@ -131,9 +131,7 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     
     # --- PÁGINAS DE DETALHAMENTO ---
     doc.add_page_break()
-    p_detalhe = doc.add_paragraph()
-    run_detalhe = p_detalhe.add_run("Detalhamento da Avaliação")
-    run_detalhe.font.size = Pt(18); run_detalhe.bold = True
+    p_detalhe = doc.add_paragraph(); run_detalhe = p_detalhe.add_run("Detalhamento da Avaliação"); run_detalhe.font.size = Pt(18); run_detalhe.bold = True
     doc.add_paragraph()
     
     matriz_a_usar = matriz_perguntas
@@ -141,12 +139,8 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
         perguntas_filtradas = {}
         for secao, perguntas in matriz_perguntas.items():
             if secao == "Municipios_MA": continue
-            itens_nao_conformes = [
-                item for item in perguntas 
-                if any(respostas.get(f"{secao}_{item.get('criterio')}_{sub}") == "Não Atende" for sub in item.get("subcriterios", []))
-            ]
-            if itens_nao_conformes:
-                perguntas_filtradas[secao] = itens_nao_conformes
+            itens_nao_conformes = [item for item in perguntas if any(respostas.get(f"{secao}_{item.get('criterio')}_{sub}") == "Não Atende" for sub in item.get("subcriterios", []))]
+            if itens_nao_conformes: perguntas_filtradas[secao] = itens_nao_conformes
         matriz_a_usar = perguntas_filtradas
 
     if not matriz_a_usar:
@@ -155,9 +149,9 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
         for secao, perguntas in matriz_a_usar.items():
             if secao == "Municipios_MA" or not perguntas: continue
             
-            # (A função calcular_pontuacao_secao não existe aqui, removido para evitar erros)
+            score_secao = calcular_pontuacao_secao(respostas, matriz_perguntas[secao], secao)
             p_secao_titulo = doc.add_paragraph()
-            run_secao_titulo = p_secao_titulo.add_run(f"{secao.upper()}")
+            run_secao_titulo = p_secao_titulo.add_run(f"{secao.upper()} - {score_secao:.2f}%")
             run_secao_titulo.font.size = Pt(14); run_secao_titulo.bold = True
             doc.add_paragraph()
 
@@ -172,8 +166,7 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
                     if respostas.get(chave_resposta) == "Não Atende":
                         subcriterios_nao_atendidos.append(subcriterio)
                         obs = respostas.get(f"{chave_resposta}_obs", "")
-                        if obs:
-                            observacoes_finais.append((subcriterio, obs))
+                        if obs: observacoes_finais.append((subcriterio, obs))
 
                 if subcriterios_nao_atendidos:
                     for sub in subcriterios_nao_atendidos:
@@ -202,8 +195,8 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
                             p_item.add_run(f"\n- Observação ({sub}): ")
                             run_obs = p_item.add_run(obs_text)
                             run_obs.font.color.rgb = RGBColor(0xFF, 0, 0)
-
-            doc.add_paragraph()
+                
+                doc.add_paragraph()
 
     # --- SALVAMENTO E CONVERSÃO ---
     os.makedirs("relatorios", exist_ok=True)
@@ -222,19 +215,16 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
 st.set_page_config(layout="wide", page_title="Avaliador de Transparência")
 conn = get_db_connection()
 initialize_database(conn)
-
 st.title("📄 Sistema de Avaliação de Transparência Municipal")
 matriz_completa = carregar_criterios_do_arquivo()
 
 if matriz_completa:
     try:
-        # Tenta carregar credenciais das secrets do Streamlit primeiro (para a nuvem)
         if 'credentials' in st.secrets:
             config = {'credentials': st.secrets['credentials']}
-        else: # Senão, carrega do arquivo local
+        else:
             with open('config.yaml', 'r', encoding='utf-8') as file:
                 config = yaml.load(file, Loader=SafeLoader)
-        
         authenticator = stauth.Authenticate(
             config['credentials'],
             st.secrets.get('cookie', {}).get('name', 'some_cookie_name'),
@@ -269,10 +259,8 @@ if matriz_completa:
         st.sidebar.header("Configuração da Avaliação")
         municipios = ["- Selecione -"] + sorted(matriz_completa.get("Municipios_MA", []))
         segmentos = ["- Selecione -"] + [k for k in matriz_completa.keys() if k != "Municipios_MA"]
-        
         mun_idx = municipios.index(st.session_state.get('municipio', '- Selecione -'))
         seg_idx = segmentos.index(st.session_state.get('segmento', '- Selecione -'))
-        
         municipio_selecionado = st.sidebar.selectbox("Município", municipios, index=mun_idx)
         segmento_selecionado = st.sidebar.selectbox("Órgão/Poder", segmentos, index=seg_idx)
 
@@ -284,18 +272,15 @@ if matriz_completa:
                     (municipio_selecionado, segmento_selecionado, st.session_state.get('username'))
                 )
                 avaliacao_existente = cursor.fetchone()
-                
                 if avaliacao_existente:
                     st.session_state.avaliacao_id = avaliacao_existente[0]
                 else:
                     cursor.execute("INSERT INTO avaliacoes (municipio, segmento, usuario) VALUES (?, ?, ?)", (municipio_selecionado, segmento_selecionado, st.session_state.get('username')))
                     conn.commit()
                     st.session_state.avaliacao_id = cursor.lastrowid
-                
                 cursor.execute("SELECT chave, valor FROM respostas WHERE avaliacao_id=?", (st.session_state.avaliacao_id,))
                 respostas_db = cursor.fetchall()
                 st.session_state.respostas = {chave: valor for chave, valor in respostas_db}
-                
                 st.session_state.avaliacao_iniciada = True
                 st.session_state.municipio = municipio_selecionado
                 st.session_state.segmento = segmento_selecionado
@@ -321,31 +306,26 @@ if matriz_completa:
                 with abas[i]:
                     perguntas_da_secao = matriz_segmento[secao_atual]
                     st.subheader(f"Critérios de {abas_formatadas[i]}")
-                    
                     for item in perguntas_da_secao:
                         criterio = item.get("criterio", "N/A")
                         subcriterios = item.get("subcriterios", [])
                         st.markdown("---")
                         st.markdown(f"##### {item.get('topico', 'N/A')} - {criterio}")
-                        
                         st.subheader("Links de Evidência")
                         chave_links = f"{secao_atual}_{criterio}_links"
                         if chave_links not in st.session_state.respostas: st.session_state.respostas[chave_links] = "[]"
                         try: links_atuais = json.loads(st.session_state.respostas[chave_links])
                         except json.JSONDecodeError: links_atuais = []
-
                         for j, link in enumerate(links_atuais):
                             link_cols = st.columns([10, 1])
                             link_cols[0].info(link)
                             if link_cols[1].button("✖️", key=f"rem_{chave_links}_{j}"):
                                 links_atuais.pop(j); st.session_state.respostas[chave_links] = json.dumps(links_atuais); st.rerun()
-                        
                         link_cols = st.columns([10, 1])
                         novo_link = link_cols[0].text_input("Adicionar link", key=f"add_{chave_links}", label_visibility="collapsed")
                         if link_cols[1].button("➕", key=f"btn_{chave_links}"):
                             if novo_link and novo_link not in links_atuais:
                                 links_atuais.append(novo_link); st.session_state.respostas[chave_links] = json.dumps(links_atuais); st.rerun()
-
                         st.markdown("---"); st.subheader("Critérios de Avaliação")
                         for sub in subcriterios:
                             chave_resposta = f"{secao_atual}_{criterio}_{sub}"
@@ -366,6 +346,7 @@ if matriz_completa:
                     st.sidebar.success("Progresso salvo no banco de dados!")
             
             tipo_relatorio = st.sidebar.radio("Tipo de Relatório", ("Apenas Não Conformidades", "Relatório Completo"))
+            
             if st.sidebar.button("📊 Gerar Relatório PDF", use_container_width=True):
                 st.sidebar.info("Salvando progresso final...")
                 if salvar_progresso_db(conn):
@@ -388,4 +369,3 @@ if matriz_completa:
 
     elif st.session_state.get("authentication_status") is False: st.error('Usuário ou senha incorretos.')
     elif st.session_state.get("authentication_status") is None: st.warning('Por favor, insira seu usuário e senha.')
-
