@@ -106,11 +106,15 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     # --- PÁGINA DE ROSTO ---
     p_title = doc.add_paragraph()
     p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run_title = p_title.add_run("PADRÃO MÍNIMO DE QUALIDADE"); run_title.font.size = Pt(22); run_title.bold = True
+    run_title = p_title.add_run("PADRÃO MÍNIMO DE QUALIDADE")
+    run_title.font.size = Pt(22); run_title.bold = True
     doc.add_paragraph()
+
     p_subtitulo = doc.add_paragraph(); p_subtitulo.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_subtitulo.add_run("Relatório de Transparência\n").bold = True; doc.add_paragraph()
+    p_subtitulo.add_run("Relatório de Transparência\n").bold = True
+    doc.add_paragraph()
     p_subtitulo.add_run(f"{segmento} de {municipio}").bold = True
+    
     resultados = calcular_indice_e_selo(respostas, matriz_perguntas)
     doc.add_paragraph()
     p_score = doc.add_paragraph(f"{resultados['indice']:.2f}%"); p_score.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -118,6 +122,7 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     p_selo = doc.add_paragraph(f"{resultados['selo']}"); p_selo.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_selo.runs[0].font.size = Pt(24); p_selo.runs[0].bold = True
     doc.add_paragraph(); doc.add_paragraph()
+    
     texto_intro = f"Com base na Lei 12.527/2011 (Lei de Acesso à Informação), o nosso controle de qualidade fez uma avaliação geral da {segmento} de {municipio}, na qual, apresentou as seguintes informações:"
     doc.add_paragraph(texto_intro); doc.add_paragraph()
     doc.add_paragraph(f"Exercício: {datetime.now().year}"); doc.add_paragraph()
@@ -126,10 +131,79 @@ def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas
     
     # --- PÁGINAS DE DETALHAMENTO ---
     doc.add_page_break()
-    p_detalhe = doc.add_paragraph(); run_detalhe = p_detalhe.add_run("Detalhamento da Avaliação"); run_detalhe.font.size = Pt(18); run_detalhe.bold = True
+    p_detalhe = doc.add_paragraph()
+    run_detalhe = p_detalhe.add_run("Detalhamento da Avaliação")
+    run_detalhe.font.size = Pt(18); run_detalhe.bold = True
     doc.add_paragraph()
-    # (Sua lógica de detalhamento e filtragem do relatório entra aqui)
-    # ...
+    
+    matriz_a_usar = matriz_perguntas
+    if tipo_relatorio == "Apenas Não Conformidades":
+        perguntas_filtradas = {}
+        for secao, perguntas in matriz_perguntas.items():
+            if secao == "Municipios_MA": continue
+            itens_nao_conformes = [
+                item for item in perguntas 
+                if any(respostas.get(f"{secao}_{item.get('criterio')}_{sub}") == "Não Atende" for sub in item.get("subcriterios", []))
+            ]
+            if itens_nao_conformes:
+                perguntas_filtradas[secao] = itens_nao_conformes
+        matriz_a_usar = perguntas_filtradas
+
+    if not matriz_a_usar:
+        doc.add_paragraph("Nenhuma não conformidade foi encontrada.")
+    else:
+        for secao, perguntas in matriz_a_usar.items():
+            if secao == "Municipios_MA" or not perguntas: continue
+            
+            # (A função calcular_pontuacao_secao não existe aqui, removido para evitar erros)
+            p_secao_titulo = doc.add_paragraph()
+            run_secao_titulo = p_secao_titulo.add_run(f"{secao.upper()}")
+            run_secao_titulo.font.size = Pt(14); run_secao_titulo.bold = True
+            doc.add_paragraph()
+
+            for item in perguntas:
+                p_item = doc.add_paragraph()
+                p_item.add_run(f"{item.get('topico', '')} - {item.get('criterio', '')} ({item.get('classificacao', '').upper()})").bold = True
+                observacoes_finais = []
+                subcriterios_nao_atendidos = []
+                
+                for subcriterio in item.get("subcriterios", []):
+                    chave_resposta = f"{secao}_{item.get('criterio')}_{subcriterio}"
+                    if respostas.get(chave_resposta) == "Não Atende":
+                        subcriterios_nao_atendidos.append(subcriterio)
+                        obs = respostas.get(f"{chave_resposta}_obs", "")
+                        if obs:
+                            observacoes_finais.append((subcriterio, obs))
+
+                if subcriterios_nao_atendidos:
+                    for sub in subcriterios_nao_atendidos:
+                        p_item.add_run(f"\n• {sub}: ").italic = True
+                        run_status = p_item.add_run("Não Atende"); run_status.bold = True; run_status.font.color.rgb = RGBColor(0xFF, 0, 0)
+                elif tipo_relatorio == "Relatório Completo":
+                     p_item.add_run(f"\n• Status: ").italic = True
+                     run_status = p_item.add_run("Atende"); run_status.bold = True; run_status.font.color.rgb = RGBColor(0x00, 0x80, 0x00)
+
+                chave_links_pergunta = f"{secao}_{item.get('criterio')}_links"
+                links_str = respostas.get(chave_links_pergunta, "[]")
+                try:
+                    links_finais = json.loads(links_str)
+                except json.JSONDecodeError:
+                    links_finais = []
+
+                if links_finais or observacoes_finais:
+                    p_item.add_run("\n\nLinks e Observações:").bold = True
+                    if links_finais:
+                        texto_links = "\n".join([f"- Link: {link}" for link in links_finais])
+                        p_item.add_run("\n" + texto_links)
+                    if links_finais and observacoes_finais:
+                        p_item.add_run("\n")
+                    if observacoes_finais:
+                        for i, (sub, obs_text) in enumerate(observacoes_finais):
+                            p_item.add_run(f"\n- Observação ({sub}): ")
+                            run_obs = p_item.add_run(obs_text)
+                            run_obs.font.color.rgb = RGBColor(0xFF, 0, 0)
+
+            doc.add_paragraph()
 
     # --- SALVAMENTO E CONVERSÃO ---
     os.makedirs("relatorios", exist_ok=True)
@@ -314,3 +388,4 @@ if matriz_completa:
 
     elif st.session_state.get("authentication_status") is False: st.error('Usuário ou senha incorretos.')
     elif st.session_state.get("authentication_status") is None: st.warning('Por favor, insira seu usuário e senha.')
+
