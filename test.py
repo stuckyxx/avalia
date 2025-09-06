@@ -77,19 +77,6 @@ def calcular_indice_e_selo(respostas, matriz_perguntas):
             else: selo = "Inicial"
     return {"indice": indice, "selo": selo}
 
-@st.cache_data
-def calcular_pontuacao_secao(respostas, perguntas_secao, nome_secao):
-    """Calcula a pontuação de uma seção específica."""
-    pesos = {"ESSENCIAL": 2.0, "OBRIGATÓRIA": 1.5, "RECOMENDADA": 1.0}
-    total_pontos_possiveis, pontos_obtidos = 0, 0
-    for item in perguntas_secao:
-        classificacao = item.get("classificacao", "RECOMENDADA").upper()
-        peso = pesos.get(classificacao, 1.0)
-        total_pontos_possiveis += peso
-        if not any(respostas.get(f"{nome_secao}_{item.get('criterio')}_{sub}") == "Não Atende" for sub in item.get("subcriterios",[])):
-            pontos_obtidos += peso
-    return (pontos_obtidos / total_pontos_possiveis * 100) if total_pontos_possiveis > 0 else 100
-
 def on_disponibilidade_change(secao, criterio, subcriterios):
     """Callback para atualizar subcritérios quando a Disponibilidade muda."""
     chave_disponibilidade = f"{secao}_{criterio}_Disponibilidade"
@@ -160,10 +147,8 @@ if matriz_completa:
         with open('config.yaml', 'r', encoding='utf-8') as file:
             config = yaml.load(file, Loader=SafeLoader)
         authenticator = stauth.Authenticate(
-            config['credentials'],
-            config['cookie']['name'],
-            config['cookie']['key'],
-            config['cookie']['expiry_days']
+            config['credentials'], config['cookie']['name'],
+            config['cookie']['key'], config['cookie']['expiry_days']
         )
         authenticator.login('main')
     except FileNotFoundError:
@@ -237,8 +222,6 @@ if matriz_completa:
                     st.toast(f"Progresso salvo automaticamente às {datetime.now().strftime('%H:%M:%S')}")
 
             matriz_segmento = matriz_completa.get(st.session_state.get('segmento'), {})
-            
-            # --- OTIMIZAÇÃO: Loop principal agora usa st.tabs para mais rapidez ---
             lista_secoes = list(matriz_segmento.keys())
             abas_formatadas = [s.replace('_', ' ') for s in lista_secoes]
             abas = st.tabs(abas_formatadas)
@@ -246,11 +229,12 @@ if matriz_completa:
             for i, secao_atual in enumerate(lista_secoes):
                 with abas[i]:
                     perguntas_da_secao = matriz_segmento[secao_atual]
+                    st.subheader(f"Critérios de {abas_formatadas[i]}")
+                    st.markdown("---")
                     
                     for item in perguntas_da_secao:
                         criterio = item.get("criterio", "N/A")
                         subcriterios = item.get("subcriterios", [])
-                        
                         st.markdown(f"##### {item.get('topico', 'N/A')} - {criterio}")
                         
                         st.subheader("Links de Evidência")
@@ -263,20 +247,15 @@ if matriz_completa:
                             link_cols = st.columns([10, 1])
                             link_cols[0].info(link)
                             if link_cols[1].button("✖️", key=f"rem_{chave_links}_{j}"):
-                                links_atuais.pop(j)
-                                st.session_state.respostas[chave_links] = json.dumps(links_atuais)
-                                st.rerun()
+                                links_atuais.pop(j); st.session_state.respostas[chave_links] = json.dumps(links_atuais); st.rerun()
                         
                         link_cols = st.columns([10, 1])
                         novo_link = link_cols[0].text_input("Adicionar link", key=f"add_{chave_links}", label_visibility="collapsed")
                         if link_cols[1].button("➕", key=f"btn_{chave_links}"):
                             if novo_link and novo_link not in links_atuais:
-                                links_atuais.append(novo_link)
-                                st.session_state.respostas[chave_links] = json.dumps(links_atuais)
-                                st.rerun()
+                                links_atuais.append(novo_link); st.session_state.respostas[chave_links] = json.dumps(links_atuais); st.rerun()
 
-                        st.markdown("---")
-                        st.subheader("Critérios de Avaliação")
+                        st.markdown("---"); st.subheader("Critérios de Avaliação")
                         for sub in subcriterios:
                             chave_resposta = f"{secao_atual}_{criterio}_{sub}"
                             cols = st.columns([1, 2])
@@ -290,17 +269,33 @@ if matriz_completa:
                                     obs = st.text_area("Obs:", value=st.session_state.respostas.get(chave_obs, ""), key=chave_obs, label_visibility="collapsed")
                                     st.session_state.respostas[chave_obs] = obs
                         st.markdown("---")
-
+            
             st.sidebar.header("Ações")
             if st.sidebar.button("💾 Salvar Progresso", use_container_width=True):
                 if salvar_progresso_db(conn):
                     st.sidebar.success("Progresso salvo no banco de dados!")
             
             tipo_relatorio = st.sidebar.radio("Tipo de Relatório", ("Apenas Não Conformidades", "Relatório Completo"))
+            
             if st.sidebar.button("📊 Gerar Relatório PDF", use_container_width=True):
-                # (Sua lógica para gerar relatório aqui)
-                pass
+                st.sidebar.info("Salvando progresso final...")
+                if salvar_progresso_db(conn):
+                    st.sidebar.success("Progresso salvo!")
+                    with st.spinner("Gerando relatório PDF..."):
+                        user_config = config['credentials']['usernames'].get(st.session_state.get('username'), {})
+                        path_pdf = gerar_relatorio_novo_modelo(st.session_state.respostas, st.session_state.municipio, st.session_state.segmento, matriz_segmento, tipo_relatorio, st.session_state.get("name"), user_config)
+                        st.session_state.path_pdf = path_pdf
+                    if st.session_state.get('path_pdf'):
+                        st.sidebar.success("Relatório PDF pronto!")
+                else:
+                    st.sidebar.error("Falha ao salvar. Relatório não gerado.")
+
+            if st.session_state.get('path_pdf'):
+                with open(st.session_state.path_pdf, "rb") as pdf_file:
+                    st.sidebar.download_button(label="⬇️ Baixar Relatório (.pdf)", data=pdf_file, file_name=os.path.basename(st.session_state.path_pdf), mime="application/pdf")
+            if st.session_state.get('fallback_docx_path'):
+                with open(st.session_state.fallback_docx_path, "rb") as docx_file:
+                    st.sidebar.download_button(label="⬇️ Baixar Arquivo Word (.docx)", data=docx_file, file_name=os.path.basename(st.session_state.fallback_docx_path), mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document")
 
     elif st.session_state.get("authentication_status") is False: st.error('Usuário ou senha incorretos.')
     elif st.session_state.get("authentication_status") is None: st.warning('Por favor, insira seu usuário e senha.')
-
