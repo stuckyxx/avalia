@@ -1,6 +1,26 @@
 # Arquivo: test.py
 
 import streamlit as st
+
+# --- INÍCIO DO BLOCO DE DEPURAÇÃO ---
+st.set_page_config(layout="wide", page_title="Debug de Secrets")
+st.title("Página de Depuração de Secrets")
+st.write("Verificando as 'secrets' que a aplicação consegue ler do ambiente da Render...")
+
+# Verifica se o objeto st.secrets tem algum item
+if st.secrets:
+    st.success("✅ Secrets encontradas! Listando seções abaixo:")
+    # Imprime cada seção encontrada
+    for section in st.secrets:
+        st.write(f"Seção encontrada: `{section}`")
+else:
+    st.error("❌ Nenhuma secret foi encontrada pela aplicação.")
+    st.warning("Isso confirma que as variáveis de ambiente configuradas no painel da Render não estão sendo carregadas no script.")
+    st.info("Causas comuns: as variáveis não foram salvas, o deploy não foi refeito, ou elas estão em um 'Environment Group' não vinculado a este serviço.")
+
+st.stop() # Esta linha PARA a execução do resto do código aqui.
+# --- FIM DO BLOCO DE DEPURAÇÃO ---
+
 import json
 import os
 from datetime import datetime, timedelta
@@ -369,3 +389,4 @@ if matriz_completa:
 
     elif st.session_state.get("authentication_status") is False: st.error('Usuário ou senha incorretos.')
     elif st.session_state.get("authentication_status") is None: st.warning('Por favor, insira seu usuário e senha.')
+
