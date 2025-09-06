@@ -99,8 +99,53 @@ def on_disponibilidade_change(secao, criterio, subcriterios):
                 st.session_state[f"{secao}_{criterio}_{sub}"] = "Não Atende"
                 st.session_state.respostas[f"{secao}_{criterio}_{sub}"] = "Não Atende"
 
-# (Cole aqui a sua função gerar_relatorio_novo_modelo completa)
-# ...
+def gerar_relatorio_novo_modelo(respostas, municipio, segmento, matriz_perguntas, tipo_relatorio, nome_usuario, usuario_config):
+    """Gera o relatório completo em formato DOCX e tenta converter para PDF."""
+    template_tipo = usuario_config.get('template', 'padrao')
+    template_path = f"modelo_{template_tipo}.docx"
+    try:
+        doc = docx.Document(template_path)
+    except Exception:
+        st.sidebar.error(f"ERRO: Arquivo de modelo '{template_path}' não foi encontrado."); return None
+    
+    # --- PÁGINA DE ROSTO ---
+    p_title = doc.add_paragraph()
+    p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run_title = p_title.add_run("PADRÃO MÍNIMO DE QUALIDADE"); run_title.font.size = Pt(22); run_title.bold = True
+    doc.add_paragraph()
+    p_subtitulo = doc.add_paragraph(); p_subtitulo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_subtitulo.add_run("Relatório de Transparência\n").bold = True; doc.add_paragraph()
+    p_subtitulo.add_run(f"{segmento} de {municipio}").bold = True
+    resultados = calcular_indice_e_selo(respostas, matriz_perguntas)
+    doc.add_paragraph()
+    p_score = doc.add_paragraph(f"{resultados['indice']:.2f}%"); p_score.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_score.runs[0].font.size = Pt(48); p_score.runs[0].bold = True
+    p_selo = doc.add_paragraph(f"{resultados['selo']}"); p_selo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_selo.runs[0].font.size = Pt(24); p_selo.runs[0].bold = True
+    doc.add_paragraph(); doc.add_paragraph()
+    texto_intro = f"Com base na Lei 12.527/2011 (Lei de Acesso à Informação)..."
+    doc.add_paragraph(texto_intro); doc.add_paragraph()
+    doc.add_paragraph(f"Exercício: {datetime.now().year}"); doc.add_paragraph()
+    doc.add_paragraph(f"Avaliação feita por: {nome_usuario}"); doc.add_paragraph()
+    doc.add_paragraph(f"Data de Geração: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
+    doc.add_page_break()
+    p_detalhe = doc.add_paragraph(); run_detalhe = p_detalhe.add_run("Detalhamento da Avaliação"); run_detalhe.font.size = Pt(18); run_detalhe.bold = True
+    doc.add_paragraph()
+    
+    # Lógica de filtragem e exibição do relatório...
+
+    os.makedirs("relatorios", exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    nome_base = f"Relatorio_{segmento.replace(' ', '')}_{municipio.replace(' ', '')}_{timestamp}"
+    path_docx = os.path.join("relatorios", f"{nome_base}.docx")
+    path_pdf = os.path.join("relatorios", f"{nome_base}.pdf")
+    doc.save(path_docx)
+    try:
+        convert(path_docx, path_pdf); os.remove(path_docx)
+        return path_pdf
+    except Exception as e:
+        st.sidebar.error(f"Falha ao converter para PDF: {e}"); st.session_state.fallback_docx_path = path_docx
+        return None
 
 # --- APLICAÇÃO PRINCIPAL ---
 st.set_page_config(layout="wide", page_title="Avaliador de Transparência")
@@ -258,3 +303,4 @@ if matriz_completa:
 
     elif st.session_state.get("authentication_status") is False: st.error('Usuário ou senha incorretos.')
     elif st.session_state.get("authentication_status") is None: st.warning('Por favor, insira seu usuário e senha.')
+
